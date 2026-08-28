@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Chitkara Carpool - Sign Up</title>
+
+
+    <!-- Google Font -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="signup.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="signup-page">
+
+
+    <!-- =================================================
+         LEFT IMAGE SECTION
+    ================================================== -->
+
+    <section class="visual-section">
+
+
+        <!-- Background overlay -->
+
+        <div class="image-overlay"></div>
+
+
+        <!-- BRAND -->
+
+        <div class="brand">
+
+            <div class="brand-logo">
+                C
+            </div>
+
+            <div>
+
+                <h2>
+                    Chitkara
+                </h2>
+
+                <span>
+                    Carpool
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO TEXT -->
+
+        <div class="hero-content">
+
+            <span class="eyebrow">
+                CHITKARA UNIVERSITY
+            </span>
+
+
+            <h1>
+
+                Join the journey.
+                <br>
+
+                <span>
+                    Ride together.
+                </span>
+
+            </h1>
+
+
+            <p>
+
+                Create your account and connect with
+                students travelling your way.
+
+            </p>
+
+        </div>
+
+
+        <!-- FEATURES -->
+
+        <div class="feature-cards">
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <strong>
+                        Verified Students
+                    </strong>
+
+                    <span>
+                        Safe university community
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    ₹
+                </div>
+
+                <div>
+
+                    <strong>
+                        Affordable Rides
+                    </strong>
+
+                    <span>
+                        Share travel costs
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    →
+                </div>
+
+                <div>
+
+                    <strong>
+                        Travel Together
+                    </strong>
+
+                    <span>
+                        Find students going your way
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+         RIGHT SIGNUP SECTION
+    ================================================== -->
+
+    <section class="signup-section">
+
+
+        <div class="signup-wrapper">
+
+
+            <div class="signup-card">
+
+
+                <!-- HEADER -->
+
+                <div class="welcome">
+
+                    <span>
+                        GET STARTED
+                    </span>
+
+
+                    <h1>
+                        Create your account
+                    </h1>
+
+
+                    <p>
+                        Sign up with your Chitkara University account.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     SIGNUP FORM
+                ================================================== -->
+
+                <form id="signupForm">
+
+
+                    <!-- FULL NAME -->
+
+                    <div class="input-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                ◯
+                            </span>
+
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="input-group">
+
+                        <label for="email">
+                            Chitkara Email
+                        </label>
+
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                ✉
+                            </span>
+
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="yourname@chitkara.edu.in"
+                                autocomplete="email"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="input-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                ♙
+                            </span>
+
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                            >
+
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="password-toggle"
+                            >
+                                ◉
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <div class="input-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                ♙
+                            </span>
+
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                placeholder="Confirm your password"
+                                autocomplete="new-password"
+                            >
+
+
+                            <button
+                                type="button"
+                                id="toggleConfirmPassword"
+                                class="password-toggle"
+                            >
+                                ◉
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ERROR -->
+
+                    <p
+                        id="errorMessage"
+                        class="error-message"
+                    ></p>
+
+
+
+                    <!-- SUCCESS -->
+
+                    <p
+                        id="successMessage"
+                        class="success-message"
+                    ></p>
+
+
+
+                    <!-- CREATE ACCOUNT -->
+
+                    <button
+                        type="submit"
+                        class="signup-button"
+                    >
+
+                        <span>
+                            Create Account
+                        </span>
+
+                        <strong>
+                            →
+                        </strong>
+
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- LOGIN -->
+
+                <p class="login-text">
+
+                    Already have an account?
+
+                    <a href="index.html">
+                        Login
+                    </a>
+
+                </p>
+
+
+
+                <!-- SECURITY -->
+
+                <div class="security-box">
+
+
+                    <div class="security-check">
+                        ✓
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            Chitkara Students Only
+                        </strong>
+
+
+                        <p>
+                            Use your official Chitkara University
+                            email to create an account.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- FOOTER -->
+
+                <div class="signup-footer">
+
+                    <span>
+                        Safe rides
+                    </span>
+
+                    <i>•</i>
+
+                    <span>
+                        Trusted students
+                    </span>
+
+                    <i>•</i>
+
+                    <span>
+                        Better journeys
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+</div>
+
+
+
+<script src="signup.js"></script>
+
+</body>
+
+</html>

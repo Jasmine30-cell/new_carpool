@@ -1,0 +1,753 @@
+/* =====================================================
+   TERMS & CONDITIONS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    --green: #07883f;
+
+    --green-light: #eaf7ef;
+
+    --bg: #f6faf7;
+
+    --card: #ffffff;
+
+    --text: #151b17;
+
+    --muted: #748078;
+
+    --border: #dfe8e2;
+
+    --blue: #1976d2;
+
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+
+    font-family: Inter, sans-serif;
+
+    background: var(--bg);
+
+    color: var(--text);
+
+    min-height: 100vh;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.terms-header {
+
+    height: 72px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid var(--border);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 42px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 10;
+}
+
+
+.back-button {
+
+    text-decoration: none;
+
+    color: #4f5b54;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    transition: 0.2s;
+}
+
+
+.back-button:hover {
+
+    color: var(--green);
+
+}
+
+
+.header-brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: var(--text);
+
+}
+
+
+.logo-box {
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 9px;
+
+    background: var(--green);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+
+.header-brand strong {
+
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.terms-container {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 55px 30px 80px;
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.terms-title {
+
+    margin-bottom: 30px;
+}
+
+
+.terms-title > span {
+
+    color: var(--green);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.8px;
+}
+
+
+.terms-title h1 {
+
+    font-size: 34px;
+
+    margin-top: 8px;
+
+    margin-bottom: 8px;
+
+    letter-spacing: -0.8px;
+}
+
+
+.terms-title p {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin-bottom: 8px;
+}
+
+
+.terms-title small {
+
+    color: #8b968f;
+
+    font-size: 10px;
+}
+
+
+/* =====================================================
+   TERMS CARD
+===================================================== */
+
+.terms-card {
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 16px;
+
+    padding: 0 30px 30px;
+
+    box-shadow:
+        0 6px 25px rgba(20, 60, 35, 0.04);
+}
+
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+.terms-card section {
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+.terms-card section:last-of-type {
+
+    border-bottom: none;
+}
+
+
+.terms-card h2 {
+
+    font-size: 15px;
+
+    margin-bottom: 10px;
+
+    color: var(--text);
+}
+
+
+.terms-card section p {
+
+    color: #66736b;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   AGREEMENT INFORMATION
+===================================================== */
+
+.agreement-box {
+
+    margin-top: 25px;
+
+    padding: 16px;
+
+    border-radius: 11px;
+
+    background: #f1f8f4;
+
+    border: 1px solid #d8eade;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.agreement-icon {
+
+    width: 36px;
+
+    height: 36px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: var(--blue);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+
+    font-weight: 800;
+}
+
+
+.agreement-box strong {
+
+    display: block;
+
+    font-size: 12px;
+
+    margin-bottom: 4px;
+}
+
+
+.agreement-box p {
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   ACCEPT AREA
+===================================================== */
+
+.accept-area {
+
+    margin-top: 18px;
+}
+
+
+/* =====================================================
+   CHECKBOX LABEL
+===================================================== */
+
+.terms-checkbox {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    width: 100%;
+
+    min-height: 52px;
+
+    padding: 12px 15px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.terms-checkbox:hover {
+
+    border-color: #9bc8aa;
+
+    background: #f9fcfa;
+}
+
+
+/* Hide real checkbox */
+
+.terms-checkbox input {
+
+    position: absolute;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   CUSTOM SMALL CHECKBOX
+===================================================== */
+
+.custom-checkbox {
+
+    width: 19px;
+
+    height: 19px;
+
+    flex-shrink: 0;
+
+    border: 2px solid #b7c4bc;
+
+    border-radius: 4px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: transparent;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    transition: 0.2s;
+}
+
+
+/* When checked */
+
+.terms-checkbox input:checked + .custom-checkbox {
+
+    background: var(--blue);
+
+    border-color: var(--blue);
+
+    color: white;
+}
+
+
+/* Text */
+
+.checkbox-text {
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #4e5b53;
+}
+
+
+/* Checked text */
+
+.terms-checkbox input:checked
+~ .checkbox-text {
+
+    color: var(--blue);
+}
+
+
+/* Checked container */
+
+.terms-checkbox:has(input:checked) {
+
+    border-color: #8bbdf0;
+
+    background: #f4f9ff;
+}
+
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.agreement-message {
+
+    font-size: 10px;
+
+    color: var(--blue);
+
+    margin-top: 8px;
+
+    padding-left: 4px;
+
+    min-height: 15px;
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark {
+
+    background: #0d1210;
+
+    color: #edf5ef;
+}
+
+
+body.dark .terms-header {
+
+    background: #121916;
+
+    border-color: #29342e;
+}
+
+
+body.dark .header-brand {
+
+    color: #edf5ef;
+}
+
+
+body.dark .back-button {
+
+    color: #aab8af;
+}
+
+
+body.dark .back-button:hover {
+
+    color: #65db95;
+}
+
+
+body.dark .terms-title h1 {
+
+    color: #edf5ef;
+}
+
+
+body.dark .terms-title p {
+
+    color: #9eaba4;
+}
+
+
+body.dark .terms-title small {
+
+    color: #77857d;
+}
+
+
+body.dark .terms-card {
+
+    background: #151c18;
+
+    border-color: #2b3730;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+body.dark .terms-card section {
+
+    border-color: #303c35;
+}
+
+
+body.dark .terms-card h2 {
+
+    color: #edf5ef;
+}
+
+
+body.dark .terms-card section p {
+
+    color: #a4b0a9;
+}
+
+
+/* Agreement */
+
+body.dark .agreement-box {
+
+    background: #193324;
+
+    border-color: #28533a;
+}
+
+
+body.dark .agreement-box strong {
+
+    color: #edf5ef;
+}
+
+
+body.dark .agreement-box p {
+
+    color: #9eaba4;
+}
+
+
+/* Checkbox */
+
+body.dark .terms-checkbox {
+
+    background: #111714;
+
+    border-color: #35433b;
+}
+
+
+body.dark .terms-checkbox:hover {
+
+    background: #18251e;
+
+    border-color: #4c7059;
+}
+
+
+body.dark .custom-checkbox {
+
+    background: #0e1411;
+
+    border-color: #5b6b62;
+}
+
+
+body.dark .checkbox-text {
+
+    color: #c7d2cc;
+}
+
+
+body.dark .terms-checkbox:has(input:checked) {
+
+    background: #122b3d;
+
+    border-color: #287dc5;
+}
+
+
+body.dark
+.terms-checkbox input:checked
+~ .checkbox-text {
+
+    color: #5ca9ed;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .terms-header {
+
+        padding: 0 18px;
+    }
+
+    .header-brand strong {
+
+        display: none;
+    }
+
+    .terms-container {
+
+        padding: 35px 15px 60px;
+    }
+
+    .terms-card {
+
+        padding: 0 20px 25px;
+    }
+
+    .terms-title h1 {
+
+        font-size: 28px;
+    }
+
+}
+
+/* =====================================================
+   DONE BUTTON
+===================================================== */
+
+.done-button {
+
+    width: 100%;
+
+    height: 48px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: var(--green);
+
+    color: white;
+
+    font-family: Inter, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.done-button:hover {
+
+    background: #056f34;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 15px rgba(7, 136, 63, 0.18);
+}
+
+
+.done-button:active {
+
+    transform: translateY(0);
+}
+
+
+/* Dark mode */
+
+body.dark .done-button {
+
+    background: #0a9b4d;
+
+    color: white;
+}
+
+
+body.dark .done-button:hover {
+
+    background: #08b45a;
+}

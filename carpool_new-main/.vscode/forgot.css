@@ -1,0 +1,664 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f4f8f4;
+    color: #182018;
+}
+
+
+/* ================= PAGE ================= */
+
+.recovery-page {
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(49,155,60,.08),
+            transparent 30%
+        ),
+        #f4f8f4;
+}
+
+
+/* ================= TOP BAR ================= */
+
+.topbar {
+    height: 82px;
+
+    padding: 0 6%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* ================= BRAND ================= */
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    text-decoration: none;
+
+    color: #182018;
+}
+
+.brand-logo {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 11px;
+
+    background: #319b3c;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 19px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 8px 20px rgba(49,155,60,.18);
+}
+
+.brand strong {
+    display: block;
+
+    font-size: 16px;
+}
+
+.brand span {
+    display: block;
+
+    color: #319b3c;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-top: 2px;
+}
+
+
+/* ================= BACK ================= */
+
+.back-login {
+    text-decoration: none;
+
+    color: #687168;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.back-login:hover {
+    color: #319b3c;
+
+    transform: translateX(-3px);
+}
+
+
+/* ================= MAIN ================= */
+
+.recovery-main {
+    min-height:
+        calc(100vh - 82px);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px 20px 50px;
+}
+
+
+/* ================= CARD ================= */
+
+.recovery-card {
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 40px 48px;
+
+    background: rgba(255,255,255,.92);
+
+    border: 1px solid #e2e9e2;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 25px 70px
+        rgba(28,64,32,.08);
+
+    animation: cardEnter .7s ease;
+}
+
+
+@keyframes cardEnter {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* ================= ICON ================= */
+
+.recovery-icon {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 14px;
+
+    background: #e7f5e8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 18px;
+}
+
+.lock-icon {
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+
+    background: #319b3c;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+/* ================= HEADING ================= */
+
+.eyebrow {
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    color: #319b3c;
+
+    font-weight: 700;
+}
+
+.recovery-heading h1 {
+    margin-top: 10px;
+
+    font-size: 30px;
+
+    letter-spacing: -1.2px;
+
+    font-weight: 750;
+}
+
+.recovery-heading p {
+    margin-top: 8px;
+
+    font-size: 10px;
+
+    line-height: 1.7;
+
+    color: #858c85;
+}
+
+
+/* ================= STEPS ================= */
+
+.steps {
+    margin: 27px 0 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+}
+
+.step {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+.step-number {
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+
+    border: 1px solid #d9e1d9;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    color: #9aa19a;
+}
+
+.step.active .step-number {
+    background: #319b3c;
+
+    border-color: #319b3c;
+
+    color: white;
+
+    box-shadow:
+        0 5px 14px
+        rgba(49,155,60,.2);
+}
+
+.step.active span {
+    color: #319b3c;
+
+    font-weight: 700;
+}
+
+.step span {
+    font-size: 8px;
+
+    color: #9aa19a;
+}
+
+.step-line {
+    height: 1px;
+
+    background: #e0e6e0;
+
+    flex: 1;
+
+    margin: 0 9px;
+}
+
+
+/* ================= INPUT ================= */
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+
+    color: #343934;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+
+    left: 15px;
+
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    color: #75a07a;
+
+    font-size: 13px;
+
+    z-index: 2;
+}
+
+.input-wrapper input {
+    width: 100%;
+
+    height: 47px;
+
+    border: 1px solid #dce4dc;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    background: white;
+
+    padding: 0 43px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    color: #202520;
+
+    transition:
+        border .3s,
+        box-shadow .3s;
+}
+
+.input-wrapper input::placeholder {
+    font-size: 12px;
+
+    color: #adb3ad;
+}
+
+.input-wrapper input:focus {
+    border-color: #319b3c;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(49,155,60,.08);
+}
+
+.input-wrapper input.valid {
+    border-color: #319b3c;
+
+    background: #f8fff8;
+}
+
+.input-wrapper input.invalid {
+    border-color: #df5555;
+
+    background: #fff9f9;
+}
+
+.input-group small {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 7px;
+
+    color: #9aa19a;
+}
+
+
+/* ================= PASSWORD TOGGLE ================= */
+
+.password-toggle {
+    position: absolute;
+
+    right: 14px;
+
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    border: none;
+
+    background: transparent;
+
+    color: #777;
+
+    cursor: pointer;
+
+    font-size: 13px;
+}
+
+
+/* ================= MESSAGES ================= */
+
+.error-message,
+.success-message {
+    min-height: 14px;
+
+    margin-top: 4px;
+
+    font-size: 9px;
+}
+
+.error-message {
+    color: #d94444;
+}
+
+.success-message {
+    color: #319b3c;
+}
+
+
+/* ================= BUTTON ================= */
+
+.reset-button {
+    width: 100%;
+
+    height: 48px;
+
+    margin-top: 7px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #299436,
+            #42aa4c
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    font-family: inherit;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform .3s,
+        box-shadow .3s;
+}
+
+.reset-button strong {
+    font-size: 15px;
+
+    transition: .3s;
+}
+
+.reset-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px
+        rgba(49,155,60,.22);
+}
+
+.reset-button:hover strong {
+    transform: translateX(4px);
+}
+
+
+/* ================= LOGIN ================= */
+
+.login-text {
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-size: 8px;
+
+    color: #858c85;
+}
+
+.login-text a {
+    color: #319b3c;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    margin-left: 4px;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= SECURITY ================= */
+
+.security-box {
+    margin-top: 18px;
+
+    padding: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    border: 1px solid #e1e9e1;
+
+    border-radius: 8px;
+
+    background: #f9fcf9;
+}
+
+.security-icon {
+    width: 25px;
+    height: 25px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #319b3c;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-size: 10px;
+}
+
+.security-box strong {
+    display: block;
+
+    font-size: 8px;
+}
+
+.security-box p {
+    margin-top: 3px;
+
+    font-size: 7px;
+
+    color: #8c948c;
+
+    line-height: 1.4;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 600px) {
+
+    .topbar {
+        height: 70px;
+
+        padding: 0 22px;
+    }
+
+    .recovery-main {
+        padding:
+            10px 18px 35px;
+    }
+
+    .recovery-card {
+        padding:
+            30px 22px;
+    }
+
+    .recovery-heading h1 {
+        font-size: 25px;
+    }
+
+    .step span {
+        display: none;
+    }
+
+    .step-line {
+        margin:
+            0 6px;
+    }
+
+}
+

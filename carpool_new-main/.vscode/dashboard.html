@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Chitkara Carpool</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="dashboard.css"
+    >
+
+      <link rel="stylesheet" href="theme.css">
+
+<style>
+
+        /* Top-right logout button */
+        .current-user {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .top-logout {
+            border: 1px solid #d8e6dc;
+            background: #ffffff;
+            color: #087f3f;
+            min-height: 40px;
+            padding: 0 16px;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            font: inherit;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            transition:
+                transform .2s ease,
+                background .2s ease,
+                color .2s ease,
+                box-shadow .2s ease;
+        }
+
+        .top-logout span {
+            font-size: 17px;
+            line-height: 1;
+        }
+
+        .top-logout:hover {
+            background: #07883f;
+            color: #ffffff;
+            border-color: #07883f;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(7, 136, 63, .18);
+        }
+
+        .top-logout:active {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 760px) {
+            .top-logout {
+                min-height: 36px;
+                padding: 0 10px;
+                font-size: 12px;
+            }
+
+            .top-logout span {
+                font-size: 15px;
+            }
+
+            .current-user {
+                gap: 8px;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .top-logout {
+                width: 38px;
+                padding: 0;
+                font-size: 0;
+            }
+
+            .top-logout span {
+                font-size: 18px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard">
+
+
+    <!-- =================================================
+         SIDEBAR
+    ================================================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+
+        <div class="sidebar-logo">
+
+            <div class="logo-box">
+                C
+            </div>
+
+            <div class="logo-name">
+
+                <strong>
+                    Chitkara
+                </strong>
+
+                <span>
+                    Carpool
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <nav class="sidebar-nav">
+
+
+            <a
+                href="#top"
+                class="sidebar-item active"
+            >
+                <span class="nav-icon">⌂</span>
+                <span>Home</span>
+            </a>
+
+
+            <!-- IMPORTANT:
+                 This now scrolls to Find Ride
+                 instead of opening home.html -->
+
+            <a
+                href="#findRide"
+                class="sidebar-item"
+                id="findRideNav"
+            >
+                <span class="nav-icon">⌕</span>
+                <span>Find a Ride</span>
+            </a>
+
+
+            <a
+                href="postride.html"
+                class="sidebar-item"
+            >
+                <span class="nav-icon plus">+</span>
+                <span>Post a Ride</span>
+            </a>
+
+
+            <a
+                href="myride.html"
+                class="sidebar-item"
+            >
+                <span class="nav-icon">▣</span>
+                <span>My Rides</span>
+            </a>
+
+
+            <!-- <button
+                class="sidebar-item sidebar-button"
+                onclick="openMessages()"
+            >
+                <span class="nav-icon">▢</span>
+                <span>Messages</span>
+            </button> -->
+
+
+            <!-- <button
+                class="sidebar-item sidebar-button"
+                onclick="openNotifications()"
+            >
+                <span class="nav-icon">♧</span>
+                <span>Notifications</span>
+
+                <span
+                    class="side-notification"
+                    id="sideNotification"
+                >
+                    0
+                </span>
+            </button> -->
+
+              <a
+                href="profile.html"
+                class="sidebar-item"
+            >
+                <span class="nav-icon">♙</span>
+                <span>Profile</span>
+            </a>
+
+           
+
+
+        
+
+            <a
+                href="setting.html"
+                class="sidebar-item"
+            >
+                <span class="nav-icon">⚙</span>
+                <span>Settings</span>
+            </a>
+
+
+
+        </nav>
+
+
+
+        <!-- SAFETY -->
+
+        <div class="safety-card">
+
+            <div class="safety-circle">
+                ✓
+            </div>
+
+            <h3>
+                Travel Safe
+            </h3>
+
+            <p>
+                Your safety is our priority.
+                Follow guidelines and travel
+                with peace of mind.
+            </p>
+
+            <!-- <button onclick="showSafety()">
+                Know More →
+            </button> -->
+
+            <button
+    type="button"
+    id="knowMoreBtn"
+    class="know-more-btn"
+>
+    Know More <span>→</span>
+</button>
+
+        </div>
+
+
+        <button
+            class="sidebar-logout"
+            onclick="logout()"
+        >
+            <span>↪</span>
+            Logout
+        </button>
+
+
+    </aside>
+
+
+
+    <!-- =================================================
+         MAIN
+    ================================================== -->
+
+    <main class="main-area">
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+
+            <div class="topbar-left">
+
+                <button
+                    class="menu-button"
+                    onclick="toggleSidebar()"
+                >
+                    ☰
+                </button>
+
+                <div class="page-title">
+                    Chitkara Carpool
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+
+                <button
+                    class="top-notification"
+                    onclick="openNotifications()"
+                >
+                    ♧
+
+                    <span
+                        id="topNotification"
+                        class="notification-number"
+                    >
+                        0
+                    </span>
+
+                </button>
+
+
+                <div class="current-user">
+
+                    <div
+                        class="profile-avatar"
+                        id="profileAvatar"
+                    >
+                        S
+                    </div>
+
+                    <div class="user-details">
+
+                        <strong id="dashboardUserName">
+                            Student
+                        </strong>
+
+                        <span>
+                            Chitkara Student
+                        </span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="top-logout"
+                        onclick="logout()"
+                        title="Logout"
+                    >
+                        <span>↪</span>
+                        Logout
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             CONTENT
+        ================================================== -->
+
+        <div
+            class="content"
+            id="top"
+        >
+
+
+            <!-- =================================================
+                 HERO
+            ================================================== -->
+
+            <section class="hero-card">
+
+
+                <div class="hero-content">
+
+                    <span class="hero-small-title">
+                        CHITKARA UNIVERSITY
+                    </span>
+
+
+                    <h1>
+                        Find or Offer a
+                        <span>Carpool</span>
+                    </h1>
+
+
+                    <p>
+                        Connect with fellow students
+                        and make your daily commute easier.
+                    </p>
+
+
+           <a href="#findRide" class="hero-find-btn">
+    <span>Find a Ride</span>
+    <span class="hero-btn-arrow">→</span>
+</a>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 WHY CARPOOL
+            ================================================== -->
+
+            <section class="why-section">
+
+                <h2>
+                    Why Carpool with Chitkara Students?
+                </h2>
+
+
+                <div class="benefit-grid">
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            ₹
+                        </div>
+
+                        <div>
+                            <h3>Save Money</h3>
+
+                            <p>
+                                Share rides and reduce
+                                travel costs.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            ♧
+                        </div>
+
+                        <div>
+                            <h3>Eco Friendly</h3>
+
+                            <p>
+                                Reduce carbon footprint
+                                and travel green.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <h3>Safe & Trusted</h3>
+
+                            <p>
+                                Verified students
+                                for your safety.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            ◷
+                        </div>
+
+                        <div>
+                            <h3>Convenient</h3>
+
+                            <p>
+                                Flexible timings that
+                                suit your schedule.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 FIND RIDE
+            ================================================== -->
+
+            <section
+                id="findRide"
+                class="find-ride-section"
+            >
+
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span>
+                            FIND YOUR RIDE
+                        </span>
+
+                        <h2>
+                            Students travelling your way
+                        </h2>
+
+                        <p>
+                            Search available carpools
+                            around Chitkara University.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SEARCH BOX -->
+
+                <div class="search-box">
+
+
+                    <!-- PICKUP -->
+
+                    <div class="search-field">
+
+                        <label>
+                            Pickup Location
+                        </label>
+
+                        
+
+                            <input list="locations" id="pickupLocation" placeholder="Select pickup">
+
+<datalist id="locations">
+    <option value="Panchkula">
+    <option value="Chandigarh">
+    <option value="Zirakpur">
+    <option value="Mohali">
+    <option value="Ambala">
+    <option value="Ludhiana">
+    <option value="Khanna">
+    <option value="Gobindgarh">
+    <option value="Patiala">
+    <option value="VIP Road">
+</datalist>
+                        
+
+                    </div>
+
+
+
+                    <div class="search-arrow">
+                        →
+                    </div>
+
+
+
+                    <!-- DESTINATION -->
+
+                    <div class="search-field">
+
+                        <label>
+                            Destination
+                        </label>
+                        
+
+                        <input list="destinations" id="destination" placeholder="Select destination">
+
+<datalist id="destinations">
+    <option value="Panchkula">
+    <option value="Chandigarh">
+    <option value="Zirakpur">
+    <option value="Mohali">
+    <option value="Ambala">
+    <option value="Chitkara University">
+</datalist>
+                        
+
+                    </div>
+
+
+
+                    <!-- DATE -->
+
+                    <div class="search-field">
+
+                        <label>
+                            Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="date"
+                        >
+
+                    </div>
+
+
+
+                    <button
+                        id="searchButton"
+                        class="search-button"
+                        onclick="searchRides()"
+                    >
+                        Search Rides
+                    </button>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 RESULTS
+            ================================================== -->
+
+            <section class="results-section">
+
+
+                <div class="results-header">
+
+
+                    <div>
+
+                        <span>
+                            AVAILABLE CARPOOLS
+                        </span>
+
+                        <h2>
+                            Rides you may like
+                        </h2>
+
+                        <p id="resultCount">
+                            Showing available rides
+                        </p>
+
+                    </div>
+
+
+                    <div class="sort-container">
+
+                        <label>
+                            Sort by
+                        </label>
+
+                        <select
+                            id="sortSelect"
+                        >
+
+                            <option value="time">
+                                Time
+                            </option>
+
+                            <option value="price">
+                                Lowest Price
+                            </option>
+
+                            <option value="seats">
+                                Most Seats
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- RIDE CARDS -->
+
+                <div
+                    id="rideContainer"
+                    class="ride-container"
+                ></div>
+
+
+
+                <!-- NO RESULTS -->
+
+                <div
+                    id="noResults"
+                    class="no-results"
+                >
+
+                    <div class="no-results-icon">
+                        🚗
+                    </div>
+
+                    <h3>
+                        No rides found
+                    </h3>
+
+                    <p>
+                        Try changing your pickup
+                        or destination.
+                    </p>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 LOWER GRID
+            ================================================== -->
+
+            <div class="lower-grid">
+
+
+                <!-- UPCOMING -->
+
+                <section class="panel">
+
+
+                    <div class="panel-heading">
+
+                        <h2>
+                            Upcoming Ride
+                        </h2>
+
+                        <a href="myride.html">
+                            View all
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        id="upcomingRide"
+                        class="upcoming-container"
+                    ></div>
+
+
+                </section>
+
+
+
+                <!-- QUICK SEARCH -->
+
+                <section class="panel">
+
+
+                    <div class="panel-heading">
+
+                        <h2>
+                            Quick Searches
+                        </h2>
+
+                    </div>
+
+
+                    <div class="quick-search-grid">
+
+
+                        <button
+                            onclick="quickSearch('Zirakpur')"
+                        >
+                            Zirakpur
+                        </button>
+
+
+                        <button
+                            onclick="quickSearch('Panchkula')"
+                        >
+                            Panchkula
+                        </button>
+
+
+                        <button
+                            onclick="quickSearch('Mohali')"
+                        >
+                            Mohali
+                        </button>
+
+
+                        <button
+                            onclick="quickSearch('Patiala')"
+                        >
+                            Patiala
+                        </button>
+
+
+                        <button
+                            onclick="quickSearch('Ambala')"
+                        >
+                            Ambala
+                        </button>
+
+
+                        <button
+                            onclick="quickSearch('Ludhiana')"
+                        >
+                            Ludhiana
+                        </button>
+
+
+                    </div>
+
+
+                </section>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 BOTTOM ACTIONS
+            ================================================== -->
+
+            <section class="bottom-actions">
+
+
+                <div class="bottom-card">
+
+                    <div class="bottom-icon">
+                        +
+                    </div>
+
+                    <div>
+
+                        <span>
+                            HAVE EMPTY SEATS?
+                        </span>
+
+                        <h2>
+                            Offer your ride
+                        </h2>
+
+                        <p>
+                            Share your journey with
+                            fellow Chitkara students.
+                        </p>
+
+                    </div>
+
+                    <button
+                        onclick="goToOfferRide()"
+                    >
+                        Post a Ride →
+                    </button>
+
+                </div>
+
+
+
+                <div class="bottom-card green">
+
+                    <div class="bottom-icon">
+                        ⌕
+                    </div>
+
+                    <div>
+
+                        <span>
+                            LOOKING FOR A RIDE?
+                        </span>
+
+                        <h2>
+                            Find your carpool
+                        </h2>
+
+                        <p>
+                            Find students travelling
+                            your way.
+                        </p>
+
+                    </div>
+
+                    <button
+                        onclick="scrollToFindRide()"
+                    >
+                        Find a Ride →
+                    </button>
+
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+
+<script src="dashboard.js"></script>
+<script src="theme.js"></script>
+
+</body>
+
+</html>

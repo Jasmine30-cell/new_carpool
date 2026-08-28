@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Profile - Chitkara Carpool</title>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Profile CSS -->
+    <link rel="stylesheet" href="profile.css">
+
+    <!-- Global Theme -->
+    <link rel="stylesheet" href="theme.css">
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard">
+
+
+    <!-- =================================================
+         SIDEBAR
+    ================================================== -->
+
+    <aside class="sidebar">
+
+
+        <!-- LOGO -->
+
+        <div class="sidebar-logo">
+
+            <div class="logo-box">
+                C
+            </div>
+
+            <div class="logo-name">
+
+                <strong>
+                    Chitkara
+                </strong>
+
+                <span>
+                    Carpool
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+
+            <a
+                href="dashboard.html"
+                class="sidebar-item"
+            >
+                <span>⌂</span>
+                Home
+            </a>
+
+
+            <a
+                href="dashboard.html#findRide"
+                class="sidebar-item"
+            >
+                <span>⌕</span>
+                Find a Ride
+            </a>
+
+
+            <a
+                href="postride.html"
+                class="sidebar-item"
+            >
+                <span>+</span>
+                Post a Ride
+            </a>
+
+
+            <a
+                href="myride.html"
+                class="sidebar-item"
+            >
+                <span>▣</span>
+                My Rides
+            </a>
+
+
+            <!-- <a
+                href="#"
+                class="sidebar-item"
+                onclick="openMessages(event)"
+            >
+                <span>▢</span>
+                Messages
+            </a> -->
+
+
+            <!-- <a
+                href="#"
+                class="sidebar-item"
+                onclick="openNotifications(event)"
+            >
+                <span>♧</span>
+                Notifications
+            </a> -->
+
+
+            <a
+                href="profile.html"
+                class="sidebar-item active"
+            >
+                <span>♙</span>
+                Profile
+            </a>
+
+
+            <a
+                href="setting.html"
+                class="sidebar-item"
+            >
+                <span>⚙</span>
+                Settings
+            </a>
+
+
+        </nav>
+
+
+
+        <!-- =================================================
+             SAFETY CARD
+        ================================================== -->
+
+        <div class="safety-card">
+
+            <div class="safety-circle">
+                ✓
+            </div>
+
+            <h3>
+                Travel Safe
+            </h3>
+
+            <p>
+                Your safety is our priority.
+                Follow guidelines and travel
+                with peace of mind.
+            </p>
+
+            <a href="#">
+                Know More →
+            </a>
+
+        </div>
+
+
+
+        <!-- LOGOUT -->
+
+        <button
+            class="sidebar-logout"
+            onclick="logout()"
+        >
+            ↪ &nbsp; Logout
+        </button>
+
+
+    </aside>
+
+
+
+    <!-- =================================================
+         MAIN AREA
+    ================================================== -->
+
+    <main class="main-area">
+
+
+        <!-- =================================================
+             TOP BAR
+        ================================================== -->
+
+        <header class="topbar">
+
+
+            <div class="page-title">
+                Profile
+            </div>
+
+
+            <div class="top-user">
+
+
+                <div
+                    class="profile-avatar"
+                    id="topUserAvatar"
+                >
+                    S
+                </div>
+
+
+                <div>
+
+                    <strong id="topUserName">
+                        Student
+                    </strong>
+
+                    <span>
+                        Chitkara Student
+                    </span>
+
+                </div>
+
+
+                <button
+                    class="top-logout"
+                    onclick="logout()"
+                >
+                    ↪ Logout
+                </button>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =================================================
+             PAGE CONTENT
+        ================================================== -->
+
+        <div class="content">
+
+
+            <!-- PAGE HEADING -->
+
+            <div class="page-heading">
+
+                <span>
+                    YOUR PROFILE
+                </span>
+
+                <h1>
+                    Profile
+                </h1>
+
+                <p>
+                    Manage your Chitkara Carpool account.
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PROFILE CARD
+            ================================================== -->
+
+            <section class="profile-card">
+
+
+                <div class="profile-main">
+
+
+                    <!-- PROFILE PHOTO -->
+
+                    <div
+                        class="profile-photo"
+                        id="profilePhoto"
+                    >
+                        S
+                    </div>
+
+
+                    <!-- USER DETAILS -->
+
+                    <div class="profile-details">
+
+                        <h2 id="profileName">
+                            Student
+                        </h2>
+
+                        <p id="profileEmail">
+                            student@chitkara.edu.in
+                        </p>
+
+                        <span class="student-badge">
+                            ✓ Chitkara Student
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- EDIT PROFILE -->
+
+                <button
+                    class="edit-profile-button"
+                    onclick="editProfile()"
+                >
+                    ✎ Edit Profile
+                </button>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 PERSONAL INFORMATION
+            ================================================== -->
+
+            <section class="information-card">
+
+
+                <div class="section-heading">
+
+                    <div class="section-icon">
+                        ♙
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Personal Information
+                        </h2>
+
+                        <p>
+                            Your basic account information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="information-grid">
+
+
+                    <!-- NAME -->
+
+                    <div class="information-item">
+
+                        <span>
+                            FULL NAME
+                        </span>
+
+                        <strong id="infoName">
+                            —
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="information-item">
+
+                        <span>
+                            EMAIL
+                        </span>
+
+                        <strong id="infoEmail">
+                            —
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- PHONE -->
+
+                    <div class="information-item">
+
+                        <span>
+                            PHONE
+                        </span>
+
+                        <strong id="infoPhone">
+                            —
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- DEPARTMENT -->
+
+                    <div class="information-item">
+
+                        <span>
+                            DEPARTMENT
+                        </span>
+
+                        <strong id="infoDepartment">
+                            —
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- YEAR -->
+
+                    <div class="information-item">
+
+                        <span>
+                            YEAR
+                        </span>
+
+                        <strong id="infoYear">
+                            —
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- GENDER -->
+
+                    <div class="information-item">
+
+                        <span>
+                            GENDER
+                        </span>
+
+                        <strong id="infoGender">
+                            —
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- ADDRESS -->
+
+                    <div class="information-item full">
+
+                        <span>
+                            ADDRESS
+                        </span>
+
+                        <strong id="infoAddress">
+                            —
+                        </strong>
+
+                    </div>
+
+
+
+                    <!-- STUDENT ID -->
+
+                    <div class="information-item">
+
+                        <span>
+                            STUDENT ID
+                        </span>
+
+                        <strong id="infoStudentId">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 ACCOUNT OPTIONS
+            ================================================== -->
+
+            <!-- <section class="options-card">
+
+
+                <div class="section-heading">
+
+                    <div class="section-icon">
+                        ⚙
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Account
+                        </h2>
+
+                        <p>
+                            Manage your account and preferences.
+                        </p>
+
+                    </div>
+
+                </div> -->
+
+
+
+                <div class="profile-options">
+
+
+                    <!-- MY RIDES -->
+
+                    <a
+                        href="myride.html"
+                        class="profile-option"
+                    >
+
+                        <div class="option-icon">
+                            ▣
+                        </div>
+
+                        <div class="option-content">
+
+                            <strong>
+                                My Rides
+                            </strong>
+
+                            <small>
+                                View your booked and offered rides
+                            </small>
+
+                        </div>
+
+                        <span class="option-arrow">
+                            ›
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- PAYMENT METHODS -->
+
+                    <a
+                        href="payment.html"
+                        class="profile-option"
+                    >
+
+                        <div class="option-icon">
+                            ₹
+                        </div>
+
+                        <div class="option-content">
+
+                            <strong>
+                                Payment Methods
+                            </strong>
+
+                            <small>
+                                Manage your payment methods
+                            </small>
+
+                        </div>
+
+                        <span class="option-arrow">
+                            ›
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- TRUSTED CONTACTS -->
+
+                    <button
+                        class="profile-option"
+                        onclick="openTrustedContacts()"
+                    >
+
+                        <div class="option-icon">
+                            ♡
+                        </div>
+
+                        <div class="option-content">
+
+                            <strong>
+                                Trusted Contacts
+                            </strong>
+
+                            <small>
+                                Emergency helpline numbers
+                            </small>
+
+                        </div>
+
+                        <span class="option-arrow">
+                            ›
+                        </span>
+
+                    </button>
+
+
+
+                    <!-- HELP & SUPPORT -->
+
+                    <button
+                        class="profile-option"
+                        onclick="openHelpSupport()"
+                    >
+
+                        <div class="option-icon">
+                            ?
+                        </div>
+
+                        <div class="option-content">
+
+                            <strong>
+                                Help & Support
+                            </strong>
+
+                            <small>
+                                Get help with Chitkara Carpool
+                            </small>
+
+                        </div>
+
+                        <span class="option-arrow">
+                            ›
+                        </span>
+
+                    </button>
+
+
+
+                    <!-- SETTINGS -->
+
+                    <a
+                        href="setting.html"
+                        class="profile-option"
+                    >
+
+                        <div class="option-icon">
+                            ⚙
+                        </div>
+
+                        <div class="option-content">
+
+                            <strong>
+                                Settings
+                            </strong>
+
+                            <small>
+                                Appearance and account preferences
+                            </small>
+
+                        </div>
+
+                        <span class="option-arrow">
+                            ›
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+
+    </main>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     EDIT PROFILE MODAL
+====================================================== -->
+
+<div
+    id="editProfileModal"
+    class="modal-overlay"
+>
+
+
+    <div class="edit-profile-modal">
+
+
+        <!-- CLOSE -->
+
+        <button
+            class="close-modal"
+            onclick="closeEditProfile()"
+        >
+            ×
+        </button>
+
+
+
+        <!-- HEADING -->
+
+        <div class="modal-heading">
+
+            <div class="modal-icon">
+                ✎
+            </div>
+
+            <div>
+
+                <h2>
+                    Edit Profile
+                </h2>
+
+                <p>
+                    Update your personal information.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PHOTO SECTION
+        ================================================== -->
+
+        <div class="edit-photo-section">
+
+
+            <div
+                id="editPhotoPreview"
+                class="edit-photo-preview"
+            >
+                S
+            </div>
+
+
+            <div class="photo-actions">
+
+
+                <label
+                    for="profileImageInput"
+                    class="change-photo-button"
+                >
+                    Change Photo
+                </label>
+
+
+                <input
+                    type="file"
+                    id="profileImageInput"
+                    accept="image/*"
+                    hidden
+                >
+
+
+                <button
+                    type="button"
+                    class="delete-photo-button"
+                    onclick="deleteProfilePicture()"
+                >
+                    Delete Photo
+                </button>
+
+
+                <small>
+                    JPG, PNG or WEBP
+                </small>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             EDIT FORM
+        ================================================== -->
+
+        <form
+            id="editProfileForm"
+            onsubmit="saveProfileChanges(event)"
+        >
+
+
+            <div class="form-grid">
+
+
+                <!-- FULL NAME -->
+
+                <div class="form-group">
+
+                    <label>
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="editName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label>
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="editEmail"
+                        placeholder="Enter your email"
+                        disabled
+                    >
+
+                    <small>
+                        Email cannot be changed.
+                    </small>
+
+                </div>
+
+
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+
+                    <label>
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="editPhone"
+                        placeholder="10 digit phone number"
+                        maxlength="10"
+                    >
+
+                </div>
+
+
+
+                <!-- DEPARTMENT -->
+
+                <div class="form-group">
+
+                    <label>
+                        Department
+                    </label>
+
+                    <input
+                        type="text"
+                        id="editDepartment"
+                        placeholder="e.g. CSE"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- YEAR -->
+
+                <div class="form-group">
+
+                    <label>
+                        Year
+                    </label>
+
+                    <select
+                        id="editYear"
+                        required
+                    >
+
+                        <option value="">
+                            Select year
+                        </option>
+
+                        <option value="1st Year">
+                            1st Year
+                        </option>
+
+                        <option value="2nd Year">
+                            2nd Year
+                        </option>
+
+                        <option value="3rd Year">
+                            3rd Year
+                        </option>
+
+                        <option value="4th Year">
+                            4th Year
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- GENDER -->
+
+                <div class="form-group">
+
+                    <label>
+                        Gender
+                    </label>
+
+                    <select
+                        id="editGender"
+                        required
+                    >
+
+                        <option value="">
+                            Select gender
+                        </option>
+
+                        <option value="Male">
+                            Male
+                        </option>
+
+                        <option value="Female">
+                            Female
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                        <option value="Prefer not to say">
+                            Prefer not to say
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- ADDRESS -->
+
+                <div class="form-group full-width">
+
+                    <label>
+                        Address
+                    </label>
+
+                    <textarea
+                        id="editAddress"
+                        placeholder="Enter your address"
+                        rows="3"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- STUDENT ID -->
+
+                <div class="form-group">
+
+                    <label>
+                        Student ID
+                    </label>
+
+                    <input
+                        type="text"
+                        id="editStudentId"
+                        placeholder="Enter student ID"
+                        required
+                    >
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ERROR -->
+
+            <div
+                id="editProfileError"
+                class="form-error"
+            ></div>
+
+
+
+            <!-- BUTTONS -->
+
+            <div class="modal-buttons">
+
+
+                <button
+                    type="button"
+                    class="cancel-button"
+                    onclick="closeEditProfile()"
+                >
+                    Cancel
+                </button>
+
+
+                <button
+                    type="submit"
+                    class="save-profile-button"
+                >
+                    Save Changes
+                </button>
+
+
+            </div>
+
+
+        </form>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     TRUSTED CONTACTS POPUP
+====================================================== -->
+
+<div
+    id="trustedContactsModal"
+    class="popup-overlay"
+>
+
+
+    <div class="contact-popup">
+
+
+        <!-- CLOSE -->
+
+        <button
+            class="popup-close"
+            onclick="closeTrustedContacts()"
+        >
+            ×
+        </button>
+
+
+
+        <div class="popup-icon">
+            ☎
+        </div>
+
+
+        <h2>
+            Trusted Contacts
+        </h2>
+
+
+        <p>
+            Use these numbers for emergency assistance.
+        </p>
+
+
+
+        <!-- HELPLINES -->
+
+        <div class="helpline-list">
+
+
+            <a
+                href="tel:112"
+                class="helpline"
+            >
+
+                <div>
+
+                    <strong>
+                        Emergency Helpline
+                    </strong>
+
+                    <span>
+                        112
+                    </span>
+
+                </div>
+
+                <b>
+                    ☎
+                </b>
+
+            </a>
+
+
+
+            <a
+                href="tel:181"
+                class="helpline"
+            >
+
+                <div>
+
+                    <strong>
+                        Women Helpline
+                    </strong>
+
+                    <span>
+                        181
+                    </span>
+
+                </div>
+
+                <b>
+                    ☎
+                </b>
+
+            </a>
+
+
+
+            <a
+                href="tel:1091"
+                class="helpline"
+            >
+
+                <div>
+
+                    <strong>
+                        Women in Distress
+                    </strong>
+
+                    <span>
+                        1091
+                    </span>
+
+                </div>
+
+                <b>
+                    ☎
+                </b>
+
+            </a>
+
+
+        </div>
+
+
+
+        <button
+            class="popup-done"
+            onclick="closeTrustedContacts()"
+        >
+            Done
+        </button>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     HELP & SUPPORT POPUP
+====================================================== -->
+
+<div
+    id="helpSupportModal"
+    class="popup-overlay"
+>
+
+
+    <div class="contact-popup">
+
+
+        <!-- CLOSE -->
+
+        <button
+            class="popup-close"
+            onclick="closeHelpSupport()"
+        >
+            ×
+        </button>
+
+
+
+        <div class="popup-icon">
+            ?
+        </div>
+
+
+        <h2>
+            Help & Support
+        </h2>
+
+
+        <p>
+            Need help with Chitkara Carpool?
+        </p>
+
+
+
+        <!-- SUPPORT OPTIONS -->
+
+        <div class="support-options">
+
+
+            <!-- CONTACT -->
+
+            <a
+                href="mailto:support@chitkaracarpool.com"
+                class="support-option"
+            >
+
+                <span>
+                    ✉
+                </span>
+
+                <div>
+
+                    <strong>
+                        Contact Support
+                    </strong>
+
+                    <small>
+                        Email our support team
+                    </small>
+
+                </div>
+
+                <b>
+                    ›
+                </b>
+
+            </a>
+
+
+
+            <!-- FAQ -->
+
+            <button
+                class="support-option"
+                onclick="showFAQ()"
+            >
+
+                <span>
+                    ?
+                </span>
+
+                <div>
+
+                    <strong>
+                        Frequently Asked Questions
+                    </strong>
+
+                    <small>
+                        Find answers to common questions
+                    </small>
+
+                </div>
+
+                <b>
+                    ›
+                </b>
+
+            </button>
+
+
+
+            <!-- REPORT -->
+
+            <a
+                href="mailto:support@chitkaracarpool.com?subject=Report%20a%20Problem"
+                class="support-option"
+            >
+
+                <span>
+                    !
+                </span>
+
+                <div>
+
+                    <strong>
+                        Report a Problem
+                    </strong>
+
+                    <small>
+                        Tell us about an issue
+                    </small>
+
+                </div>
+
+                <b>
+                    ›
+                </b>
+
+            </a>
+
+
+        </div>
+
+
+
+        <button
+            class="popup-done"
+            onclick="closeHelpSupport()"
+        >
+            Done
+        </button>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="profile.js"></script>
+
+<script src="theme.js"></script>
+
+
+</body>
+
+</html>

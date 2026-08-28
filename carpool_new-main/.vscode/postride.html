@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Post a Ride - Chitkara Carpool</title>
+
+
+    <!-- Google Font -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="postride.css"
+    >
+
+    <link rel="stylesheet" href="theme.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+    <!-- LOGO -->
+
+    <div class="sidebar-logo">
+
+        <div class="logo-box">
+            C
+        </div>
+
+        <div class="logo-text">
+
+            <strong>
+                Chitkara
+            </strong>
+
+            <span>
+                Carpool
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="sidebar-nav">
+
+
+        <a
+            href="dashboard.html"
+            class="nav-item"
+        >
+
+            <i class="fa-solid fa-house"></i>
+
+            <span>
+                Home
+            </span>
+
+        </a>
+
+
+        <a
+            href="dashboard.html"
+            class="nav-item"
+        >
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <span>
+                Find a Ride
+            </span>
+
+        </a>
+
+
+        <a
+            href="postride.html"
+            class="nav-item active"
+        >
+
+            <i class="fa-solid fa-plus"></i>
+
+            <span>
+                Post a Ride
+            </span>
+
+        </a>
+
+
+        <a
+            href="myride.html"
+            class="nav-item"
+        >
+
+            <i class="fa-solid fa-car"></i>
+
+            <span>
+                My Rides
+            </span>
+
+        </a>
+
+
+        <!-- <a
+            href="#"
+            class="nav-item"
+            id="messagesNav"
+        >
+
+            <i class="fa-regular fa-message"></i>
+
+            <span>
+                Messages
+            </span>
+
+        </a> -->
+
+
+        <!-- <a
+            href="#"
+            class="nav-item"
+        >
+
+            <i class="fa-regular fa-bell"></i>
+
+            <span>
+                Notifications
+            </span>
+
+        </a>
+ -->
+
+     
+
+        <a
+            href="profile.html"
+            class="nav-item"
+        >
+
+            <i class="fa-solid fa-car"></i>
+
+            <span>
+                Profile
+            </span>
+
+        </a>
+
+        <a
+            href="setting.html"
+            class="nav-item"
+        >
+ <i class="fa-solid fa-gear"></i>
+
+            <span>
+                Settings
+            </span>
+
+        </a>
+
+
+  
+
+
+        
+
+    </nav>
+
+
+
+    <!-- SAFETY CARD -->
+
+    <div class="safety-card">
+
+        <div class="safety-icon">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+        </div>
+
+
+        <h4>
+            Travel Safe
+        </h4>
+
+
+        <p>
+            Your safety is our priority.
+            Travel responsibly with
+            verified Chitkara students.
+        </p>
+
+
+        <a href="#">
+            Safety Guidelines →
+        </a>
+
+    </div>
+
+
+
+    <!-- LOGOUT -->
+
+    <button
+        class="sidebar-logout"
+        onclick="logout()"
+    >
+
+        <i class="fa-solid fa-right-from-bracket"></i>
+
+        Logout
+
+    </button>
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN WRAPPER
+===================================================== -->
+
+<div class="main-wrapper">
+
+
+    <!-- HEADER -->
+
+    <header class="top-header">
+
+
+        <div class="header-left">
+
+            <button
+                class="menu-button"
+                id="menuButton"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="mobile-brand">
+                Chitkara Carpool
+            </div>
+
+        </div>
+
+
+
+        <div class="header-right">
+
+
+            <button
+                class="header-icon"
+            >
+
+                <i class="fa-regular fa-bell"></i>
+
+                <span>
+                    0
+                </span>
+
+            </button>
+
+
+            <div class="header-user">
+
+
+                <div
+                    class="user-avatar"
+                    id="userAvatar"
+                >
+                    S
+                </div>
+
+
+                <div class="header-user-info">
+
+                    <strong id="userName">
+                        Student
+                    </strong>
+
+                    <small>
+                        Chitkara Student
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ===================================================== -->
+
+    <main class="main-container">
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-heading">
+
+
+            <div>
+
+                <span class="page-label">
+                    SHARE YOUR JOURNEY
+                </span>
+
+
+                <h1>
+                    Post a Ride
+                </h1>
+
+
+                <p>
+                    Offer your empty seats to fellow
+                    Chitkara students travelling your way.
+                </p>
+
+            </div>
+
+
+            <div class="verified-badge">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                Chitkara Students Only
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FORM + PREVIEW
+        ===================================================== -->
+
+        <div class="post-layout">
+
+
+            <!-- =================================================
+                 FORM
+            ================================================= -->
+
+            <section class="form-card">
+
+
+                <div class="card-heading">
+
+                    <div class="heading-icon">
+
+                        <i class="fa-solid fa-route"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h2>
+                            Ride Details
+                        </h2>
+
+                        <p>
+                            Tell students about your journey.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <form id="postRideForm">
+
+
+                    <!-- ROUTE -->
+
+                    <div class="form-section-title">
+
+                        <span>
+                            01
+                        </span>
+
+                        Route & Schedule
+
+                    </div>
+
+
+
+                    <div class="form-row">
+
+
+                        <!-- PICKUP -->
+
+                        <div class="input-group">
+
+                            <label for="pickup">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                Pickup Location
+
+                            </label>
+
+
+                            <select id="pickup">
+
+                                <option value="">
+                                    Select pickup
+                                </option>
+
+                                <option value="Zirakpur">
+                                    Zirakpur
+                                </option>
+
+                                <option value="VIP Road">
+                                    VIP Road
+                                </option>
+
+                                <option value="Mohali">
+                                    Mohali
+                                </option>
+
+                                <option value="Panchkula">
+                                    Panchkula
+                                </option>
+
+                                <option value="Patiala">
+                                    Patiala
+                                </option>
+
+                                <option value="Ludhiana">
+                                    Ludhiana
+                                </option>
+
+                                <option value="Khanna">
+                                    Khanna
+                                </option>
+
+                                <option value="Gobindgarh">
+                                    Gobindgarh
+                                </option>
+
+                                <option value="Ambala">
+                                    Ambala
+                                </option>
+
+                            </select>
+
+                            <small
+                                class="field-error"
+                                id="pickupError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <!-- DESTINATION -->
+
+                        <div class="input-group">
+
+                            <label for="destination">
+
+                                <i class="fa-solid fa-flag-checkered"></i>
+
+                                Destination
+
+                            </label>
+
+
+                            <select id="destination">
+
+                                <option value="">
+                                    Select destination
+                                </option>
+
+                                <option value="Chitkara University">
+                                    Chitkara University
+                                </option>
+
+                                <option value="Rajpura">
+                                    Rajpura
+                                </option>
+
+                            </select>
+
+                            <small
+                                class="field-error"
+                                id="destinationError"
+                            ></small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- DATE + TIME -->
+
+                    <div class="form-row">
+
+
+                        <div class="input-group">
+
+                            <label for="rideDate">
+
+                                <i class="fa-regular fa-calendar"></i>
+
+                                Date
+
+                            </label>
+
+
+                            <input
+                                type="date"
+                                id="rideDate"
+                            >
+
+                            <small
+                                class="field-error"
+                                id="dateError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <div class="input-group">
+
+                            <label for="rideTime">
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                Departure Time
+
+                            </label>
+
+
+                            <input
+                                type="time"
+                                id="rideTime"
+                            >
+
+                            <small
+                                class="field-error"
+                                id="timeError"
+                            ></small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- SEATS + PRICE -->
+
+                    <div class="form-row">
+
+
+                        <div class="input-group">
+
+                            <label for="seats">
+
+                                <i class="fa-solid fa-user-group"></i>
+
+                                Available Seats
+
+                            </label>
+
+
+                            <select id="seats">
+
+                                <option value="">
+                                    Select seats
+                                </option>
+
+                                <option value="1">
+                                    1 Seat
+                                </option>
+
+                                <option value="2">
+                                    2 Seats
+                                </option>
+
+                                <option value="3">
+                                    3 Seats
+                                </option>
+
+                                <option value="4">
+                                    4 Seats
+                                </option>
+
+                            </select>
+
+                            <small
+                                class="field-error"
+                                id="seatsError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <div class="input-group">
+
+                            <label for="price">
+
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                                Price Per Seat
+
+                            </label>
+
+
+                            <div class="input-with-prefix">
+
+                                <span>
+                                    ₹
+                                </span>
+
+                                <input
+                                    type="number"
+                                    id="price"
+                                    min="1"
+                                    max="1000"
+                                    placeholder="40"
+                                >
+
+                            </div>
+
+
+                            <small
+                                class="field-error"
+                                id="priceError"
+                            ></small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- VEHICLE -->
+
+                    <div class="form-section-title vehicle-title">
+
+                        <span>
+                            02
+                        </span>
+
+                        Vehicle Information
+
+                    </div>
+
+
+
+                    <div class="form-row">
+
+
+                        <div class="input-group">
+
+                            <label for="carModel">
+
+                                <i class="fa-solid fa-car-side"></i>
+
+                                Car Model
+
+                            </label>
+
+
+                            <input
+                                type="text"
+                                id="carModel"
+                                placeholder="e.g. Swift Dzire"
+                            >
+
+                            <small
+                                class="field-error"
+                                id="carModelError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <div class="input-group">
+
+                            <label for="carColor">
+
+                                <i class="fa-solid fa-palette"></i>
+
+                                Car Color
+
+                            </label>
+
+
+                            <input
+                                type="text"
+                                id="carColor"
+                                placeholder="e.g. White"
+                            >
+
+                            <small
+                                class="field-error"
+                                id="carColorError"
+                            ></small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label for="carNumber">
+
+                            <i class="fa-solid fa-hashtag"></i>
+
+                            Vehicle Number
+
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="carNumber"
+                            placeholder="e.g. PB65AB1234"
+                            maxlength="12"
+                        >
+
+
+                        <small
+                            class="field-error"
+                            id="carNumberError"
+                        ></small>
+
+                    </div>
+
+
+
+                    <!-- NOTES -->
+
+                    <div class="input-group">
+
+                        <label for="notes">
+
+                            <i class="fa-regular fa-note-sticky"></i>
+
+                            Additional Notes
+                            <span>(Optional)</span>
+
+                        </label>
+
+
+                        <textarea
+                            id="notes"
+                            rows="3"
+                            placeholder="e.g. I'll leave from the main gate at 7:45 AM..."
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- ERROR -->
+
+                    <div
+                        id="formError"
+                        class="form-error"
+                    ></div>
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        class="post-button"
+                    >
+
+                        <span>
+                            Post My Ride
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                </form>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 PREVIEW
+            ================================================= -->
+
+            <aside class="preview-column">
+
+
+                <!-- PREVIEW CARD -->
+
+                <section class="preview-card">
+
+
+                    <div class="preview-header">
+
+                        <div>
+
+                            <span>
+                                RIDE PREVIEW
+                            </span>
+
+                            <h2>
+                                How students will see it
+                            </h2>
+
+                        </div>
+
+
+                        <div class="live-dot">
+                            <span></span>
+                            Live
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- DRIVER -->
+
+                    <div class="preview-driver">
+
+
+                        <div
+                            class="preview-avatar"
+                            id="previewAvatar"
+                        >
+                            S
+                        </div>
+
+
+                        <div>
+
+                            <strong id="previewDriver">
+                                You
+                            </strong>
+
+                            <span>
+                                Chitkara Verified Student
+                            </span>
+
+                        </div>
+
+
+                        <div class="verified">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ROUTE -->
+
+                    <div class="preview-route">
+
+
+                        <div class="route-point">
+
+                            <div class="route-icon pickup">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+
+                            <div>
+
+                                <small>
+                                    PICKUP
+                                </small>
+
+                                <strong id="previewPickup">
+                                    Select pickup
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="route-connector"></div>
+
+
+
+                        <div class="route-point">
+
+                            <div class="route-icon destination">
+                                <i class="fa-solid fa-flag-checkered"></i>
+                            </div>
+
+
+                            <div>
+
+                                <small>
+                                    DESTINATION
+                                </small>
+
+                                <strong id="previewDestination">
+                                    Chitkara University
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- DETAILS -->
+
+                    <div class="preview-details">
+
+
+                        <div>
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                            <span id="previewDate">
+                                Select date
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <i class="fa-regular fa-clock"></i>
+
+                            <span id="previewTime">
+                                Select time
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <i class="fa-solid fa-user-group"></i>
+
+                            <span id="previewSeats">
+                                0 seats
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PRICE -->
+
+                    <div class="preview-bottom">
+
+
+                        <div>
+
+                            <small>
+                                PRICE PER SEAT
+                            </small>
+
+                            <strong id="previewPrice">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="car-mini">
+
+                            <i class="fa-solid fa-car-side"></i>
+
+                            <span id="previewCar">
+                                Your car
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- TIPS -->
+
+                <section class="tips-card">
+
+
+                    <div class="tips-title">
+
+                        <div class="tips-icon">
+
+                            <i class="fa-regular fa-lightbulb"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Tips for a great ride
+                            </strong>
+
+                            <span>
+                                Help fellow students find you easily
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <ul>
+
+                        <li>
+
+                            <i class="fa-solid fa-check"></i>
+
+                            Keep your pickup location specific.
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-check"></i>
+
+                            Set a fair price for fellow students.
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-check"></i>
+
+                            Add your exact vehicle details.
+
+                        </li>
+
+
+                        <li>
+
+                            <i class="fa-solid fa-check"></i>
+
+                            Be punctual at the pickup point.
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+
+            </aside>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+
+<!-- =====================================================
+     SUCCESS MODAL
+===================================================== -->
+
+<div
+    id="successModal"
+    class="success-overlay"
+>
+
+
+    <div class="success-card">
+
+
+        <div class="success-icon">
+
+            <i class="fa-solid fa-check"></i>
+
+        </div>
+
+
+        <h2>
+            Ride Posted!
+        </h2>
+
+
+        <p>
+            Your ride has been successfully posted.
+            Fellow Chitkara students can now request
+            a seat.
+        </p>
+
+
+        <div class="success-actions">
+
+            <button
+                id="viewRidesButton"
+                class="secondary-button"
+            >
+                My Rides
+            </button>
+
+
+            <button
+                id="findRideButton"
+                class="primary-button"
+            >
+                Find a Ride
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- MOBILE OVERLAY -->
+
+<div
+    id="sidebarOverlay"
+    class="sidebar-overlay"
+></div>
+
+
+
+<script src="postride.js"></script>
+<script src="theme.js"></script>
+
+</body>
+
+</html>

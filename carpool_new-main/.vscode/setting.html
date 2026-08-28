@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings - Chitkara Carpool</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="setting.css">
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+
+<body>
+
+<div class="dashboard">
+
+    <!-- ==========================================
+         SIDEBAR
+    =========================================== -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <div class="logo-box">
+                C
+            </div>
+
+            <div class="logo-name">
+                <strong>Chitkara</strong>
+                <span>Carpool</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html" class="sidebar-item">
+                <span>⌂</span>
+                Home
+            </a>
+
+            <a href="dashboard.html#findRide" class="sidebar-item">
+                <span>⌕</span>
+                Find a Ride
+            </a>
+
+            <a href="postride.html" class="sidebar-item">
+                <span>+</span>
+                Post a Ride
+            </a>
+
+            <a href="myride.html" class="sidebar-item">
+                <span>▣</span>
+                My Rides
+            </a>
+
+            <!-- <a href="#" class="sidebar-item">
+                <span>▢</span>
+                Messages
+            </a> -->
+
+            <!-- <a href="#" class="sidebar-item">
+                <span>♧</span>
+                Notifications
+            </a> -->
+
+            <a href="profile.html" class="sidebar-item">
+                <span>♙</span>
+                Profile
+            </a>
+
+            <a href="settings.html" class="sidebar-item active">
+                <span>⚙</span>
+                Settings
+            </a>
+
+        </nav>
+
+
+        <!-- TRAVEL SAFE -->
+
+        <div class="safety-card">
+
+            <div class="safety-circle">
+                ✓
+            </div>
+
+            <h3>
+                Travel Safe
+            </h3>
+
+            <p>
+                Your safety is our priority.
+                Follow guidelines and travel
+                with peace of mind.
+            </p>
+
+        </div>
+
+
+        <!-- LOGOUT -->
+
+        <button
+            class="sidebar-logout"
+            onclick="logout()"
+        >
+            ↪ &nbsp; Logout
+        </button>
+
+    </aside>
+
+
+
+    <!-- ==========================================
+         MAIN AREA
+    =========================================== -->
+
+    <main class="main-area">
+
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div class="page-title">
+                Settings
+            </div>
+
+
+            <div class="top-user">
+
+                <div
+                    class="profile-avatar"
+                    id="profileAvatar"
+                >
+                    S
+                </div>
+
+
+                <div>
+
+                    <strong id="userName">
+                        Student
+                    </strong>
+
+                    <span>
+                        Chitkara Student
+                    </span>
+
+                </div>
+
+
+                <button
+                    class="top-logout"
+                    onclick="logout()"
+                >
+                    ↪ Logout
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ==========================================
+             CONTENT
+        =========================================== -->
+
+        <div class="content">
+
+
+            <!-- PAGE HEADING -->
+
+            <div class="settings-heading">
+
+                <span>
+                    ACCOUNT PREFERENCES
+                </span>
+
+                <h1>
+                    Settings
+                </h1>
+
+                <p>
+                    Customize your Chitkara Carpool experience.
+                </p>
+
+            </div>
+
+
+
+            <!-- ==========================================
+                 APPEARANCE
+            =========================================== -->
+
+            <section class="settings-card">
+
+                <div class="card-title">
+
+                    <div class="title-icon">
+                        ◐
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Appearance
+                        </h2>
+
+                        <p>
+                            Choose how Chitkara Carpool looks for you.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="appearance-options">
+
+
+                    <!-- LIGHT -->
+
+                    <button
+                        class="appearance-option"
+                        data-theme="light"
+                    >
+
+                        <div class="appearance-preview light-preview">
+
+                            <div class="preview-top"></div>
+
+                            <div class="preview-body">
+                                <div></div>
+                                <div></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="appearance-info">
+
+                            <strong>
+                                Light
+                            </strong>
+
+                            <span>
+                                Clean and bright
+                            </span>
+
+                        </div>
+
+
+                        <span class="theme-check">
+                            ✓
+                        </span>
+
+                    </button>
+
+
+
+                    <!-- DARK -->
+
+                    <button
+                        class="appearance-option"
+                        data-theme="dark"
+                    >
+
+                        <div class="appearance-preview dark-preview">
+
+                            <div class="preview-top"></div>
+
+                            <div class="preview-body">
+                                <div></div>
+                                <div></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="appearance-info">
+
+                            <strong>
+                                Dark
+                            </strong>
+
+                            <span>
+                                Easy on the eyes
+                            </span>
+
+                        </div>
+
+
+                        <span class="theme-check">
+                            ✓
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==========================================
+                 HELP & SUPPORT
+            =========================================== -->
+
+            <section class="settings-card">
+
+                <div class="card-title">
+
+                    <div class="title-icon">
+                        ?
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Help & Support
+                        </h2>
+
+                        <p>
+                            Need help? Find answers or contact us.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-links">
+
+
+                    <!-- FAQ -->
+
+                    <button
+                        class="settings-link"
+                        onclick="showFAQ()"
+                    >
+
+                        <span class="link-icon">
+                            ?
+                        </span>
+
+                        <span>
+
+                            <strong>
+                                Frequently Asked Questions
+                            </strong>
+
+                            <small>
+                                Find answers to common questions
+                            </small>
+
+                        </span>
+
+                        <b>
+                            ›
+                        </b>
+
+                    </button>
+
+
+
+                    <!-- CONTACT SUPPORT -->
+
+                    <button
+                        class="settings-link"
+                        onclick="contactSupport()"
+                    >
+
+                        <span class="link-icon">
+                            ✉
+                        </span>
+
+                        <span>
+
+                            <strong>
+                                Contact Support
+                            </strong>
+
+                            <small>
+                                Get help from our support team
+                            </small>
+
+                        </span>
+
+                        <b>
+                            ›
+                        </b>
+
+                    </button>
+
+
+
+                    <!-- REPORT PROBLEM -->
+
+                    <button
+                        class="settings-link"
+                        onclick="reportProblem()"
+                    >
+
+                        <span class="link-icon">
+                            !
+                        </span>
+
+                        <span>
+
+                            <strong>
+                                Report a Problem
+                            </strong>
+
+                            <small>
+                                Tell us about an issue
+                            </small>
+
+                        </span>
+
+                        <b>
+                            ›
+                        </b>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==========================================
+                 LEGAL
+            =========================================== -->
+
+            <section class="settings-card">
+
+                <div class="card-title">
+
+                    <div class="title-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Legal
+                        </h2>
+
+                        <p>
+                            Review the rules for using Chitkara Carpool.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="terms.html"
+                    class="settings-link"
+                >
+
+                    <span class="link-icon">
+                        ▤
+                    </span>
+
+                    <span>
+
+                        <strong>
+                            Terms & Conditions
+                        </strong>
+
+                        <small>
+                            Read the terms and conditions
+                        </small>
+
+                    </span>
+
+                    <b>
+                        ›
+                    </b>
+
+                </a>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+
+<!-- ==========================================
+     FAQ MODAL
+=========================================== -->
+
+<div
+    class="faq-modal"
+    id="faqModal"
+>
+
+
+    <div class="faq-box">
+
+
+        <!-- FAQ HEADER -->
+
+        <div class="faq-header">
+
+
+            <div class="faq-title-area">
+
+                <div class="faq-icon">
+                    ?
+                </div>
+
+
+                <div>
+
+                    <span>
+                        HELP & SUPPORT
+                    </span>
+
+                    <h2>
+                        Frequently Asked Questions
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="faq-close"
+                onclick="closeFAQ()"
+                aria-label="Close FAQ"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+
+        <!-- FAQ CONTENT -->
+
+        <div class="faq-content">
+
+
+            <!-- QUESTION 1 -->
+
+            <div class="faq-item">
+
+                <div class="faq-number">
+                    01
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        How do I find a ride?
+                    </h3>
+
+                    <p>
+                        Go to
+                        <strong>Find a Ride</strong>
+                        from the dashboard.
+                        Select your pickup location,
+                        destination and date, then search
+                        for available rides.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- QUESTION 2 -->
+
+            <div class="faq-item">
+
+                <div class="faq-number">
+                    02
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        How do I post a ride?
+                    </h3>
+
+                    <p>
+                        Select
+                        <strong>Post a Ride</strong>
+                        from the sidebar and enter your
+                        journey details such as pickup,
+                        destination, date, time and
+                        available seats.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- QUESTION 3 -->
+
+            <div class="faq-item">
+
+                <div class="faq-number">
+                    03
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Where can I see my rides?
+                    </h3>
+
+                    <p>
+                        Open
+                        <strong>My Rides</strong>
+                        from the sidebar to view your
+                        upcoming and previously posted rides.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- QUESTION 4 -->
+
+            <div class="faq-item">
+
+                <div class="faq-number">
+                    04
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        How do I cancel a ride?
+                    </h3>
+
+                    <p>
+                        Open
+                        <strong>My Rides</strong>
+                        and select the ride you want to
+                        cancel. Use the cancel option
+                        available for that ride.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FAQ FOOTER -->
+
+        <div class="faq-footer">
+
+            <span>
+                Still need help?
+            </span>
+
+            <button onclick="closeFAQ()">
+                Got it
+            </button>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- SCRIPTS -->
+
+<script src="setting.js"></script>
+<script src="theme.js"></script>
+
+</body>
+</html>

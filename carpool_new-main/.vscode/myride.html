@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Rides - Chitkara Carpool</title>
+
+
+    <!-- Google Font -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="myride.css"
+    >
+    <link rel="stylesheet" href="theme.css">
+    
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+<aside class="sidebar">
+
+
+    <!-- LOGO -->
+
+    <div class="sidebar-logo">
+
+        <div class="logo-box">
+            C
+        </div>
+
+
+        <div class="logo-text">
+
+            <strong>
+                Chitkara
+            </strong>
+
+            <span>
+                Carpool
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="sidebar-nav">
+
+
+        <a
+            href="dashboard.html"
+            class="nav-item"
+        >
+
+            <i class="fa-solid fa-house"></i>
+
+            <span>
+                Home
+            </span>
+
+        </a>
+
+
+        <a
+             href="dashboard.html#findRide"
+            class="nav-item"
+        >
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <span>
+                Find a Ride
+            </span>
+
+        </a>
+         <!-- <a
+                href="dashboard.html#findRide"
+                class="sidebar-item"
+            >
+                <span>⌕</span>
+                Find a Ride
+            </a> -->
+
+
+        <a
+            href="postride.html"
+            class="nav-item"
+        >
+
+            <i class="fa-solid fa-plus"></i>
+
+            <span>
+                Post a Ride
+            </span>
+
+        </a>
+
+
+        <a
+            href="myride.html"
+            class="nav-item active"
+        >
+
+            <i class="fa-solid fa-car"></i>
+
+            <span>
+                My Rides
+            </span>
+
+        </a>
+
+
+        <!-- <a
+            href="#"
+            class="nav-item"
+            id="messagesNav"
+        >
+
+            <i class="fa-regular fa-message"></i>
+
+            <span>
+                Messages
+            </span>
+
+        </a> -->
+
+
+        <!-- <a
+            href="#"
+            class="nav-item"
+            id="notificationsNav"
+        >
+
+            <i class="fa-regular fa-bell"></i>
+
+            <span>
+                Notifications
+            </span>
+
+            
+        </a> -->
+
+
+         <a
+            href="profile.html"
+            class="nav-item"
+        >
+
+            <i class="fa-solid fa-plus"></i>
+
+            <span>
+                Profile
+            </span>
+
+        </a>
+
+                <a
+            href="setting.html"
+            class="nav-item"
+        >
+
+            <i class="fa-solid fa-gear"></i>
+
+            <span>
+            Settings
+            </span>
+
+        </a>
+
+
+
+    </nav>
+
+
+
+    <!-- SAFETY -->
+
+    <div class="safety-card">
+
+        <div class="safety-icon">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+        </div>
+
+
+        <h4>
+            Travel Safe
+        </h4>
+
+
+        <p>
+            Your safety is our priority.
+            Travel responsibly with
+            verified Chitkara students.
+        </p>
+
+
+        <a href="#">
+            Safety Guidelines →
+        </a>
+
+    </div>
+
+
+
+    <!-- LOGOUT -->
+
+    <button
+        onclick="logout()"
+        class="sidebar-logout"
+    >
+
+        <i class="fa-solid fa-right-from-bracket"></i>
+
+        Logout
+
+    </button>
+
+</aside>
+
+
+
+<!-- =====================================================
+     MAIN WRAPPER
+===================================================== -->
+
+<div class="main-wrapper">
+
+
+    <!-- =================================================
+         HEADER
+    ================================================= -->
+
+    <header class="top-header">
+
+
+        <div class="header-left">
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                type="button"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="mobile-brand">
+
+                Chitkara Carpool
+
+            </div>
+
+        </div>
+
+
+
+        <div class="header-right">
+
+
+            <!-- Notification -->
+
+            <button
+                class="header-icon"
+                id="notificationButton"
+                type="button"
+            >
+
+                <i class="fa-regular fa-bell"></i>
+
+                <span>
+                    0
+                </span>
+
+            </button>
+
+
+
+            <!-- USER -->
+
+            <div class="header-user">
+
+
+                <div
+                    class="user-avatar"
+                    id="userAvatar"
+                >
+                    S
+                </div>
+
+
+                <div class="header-user-info">
+
+                    <strong id="userName">
+                        Student
+                    </strong>
+
+                    <small>
+                        Chitkara Student
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         MAIN CONTENT
+    ================================================= -->
+
+    <main class="main-container">
+
+
+        <!-- PAGE HEADING -->
+
+        <section class="page-heading">
+
+
+            <div>
+
+                <span class="page-label">
+                    YOUR JOURNEYS
+                </span>
+
+
+                <h1>
+                    My Rides
+                </h1>
+
+
+                <p>
+                    Manage your requested,
+                    upcoming and past rides.
+                </p>
+
+            </div>
+
+
+            <a
+               href="dashboard.html#findRide"
+                class="find-ride-button"
+            ></a>
+            
+
+                
+
+                Make your ride easier 
+
+            </a>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RIDE SUMMARY
+        ================================================= -->
+
+        <section class="ride-summary">
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon green">
+
+                    <i class="fa-solid fa-car"></i>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Upcoming
+                    </span>
+
+                    <strong id="upcomingCount">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon orange">
+
+                    <i class="fa-regular fa-clock"></i>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Pending
+                    </span>
+
+                    <strong id="pendingCount">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon blue">
+
+                    <i class="fa-solid fa-route"></i>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Completed
+                    </span>
+
+                    <strong id="pastCount">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon purple">
+
+                    <i class="fa-solid fa-chart-simple"></i>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Total Rides
+                    </span>
+
+                    <strong id="totalCount">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             TABS
+        ================================================= -->
+
+        <section class="rides-section">
+
+
+            <div class="rides-section-header">
+
+
+                <div>
+
+                    <h2>
+                        Your Rides
+                    </h2>
+
+                    <p>
+                        Keep track of all your carpool activity.
+                    </p>
+
+                </div>
+
+
+                <div class="ride-status-info">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    Chitkara verified rides
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TABS -->
+
+            <div class="tabs">
+
+
+                <button
+                    class="tab active"
+                    onclick="showRides('upcoming')"
+                >
+
+                    <i class="fa-solid fa-calendar-day"></i>
+
+                    Upcoming
+
+                </button>
+
+
+                <button
+                    class="tab"
+                    onclick="showRides('pending')"
+                >
+
+                    <i class="fa-regular fa-clock"></i>
+
+                    Pending
+
+                </button>
+
+
+                <button
+                    class="tab"
+                    onclick="showRides('past')"
+                >
+
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+
+                    Past
+
+                </button>
+
+            </div>
+
+
+
+            <!-- RIDES -->
+
+            <div
+                id="ridesContainer"
+                class="rides-container"
+            ></div>
+
+
+
+            <!-- EMPTY STATE -->
+
+            <div
+                id="emptyState"
+                class="empty-state"
+            >
+
+                <div class="empty-icon">
+
+                    <i class="fa-solid fa-car-side"></i>
+
+                </div>
+
+
+                <h2>
+                    No rides yet
+                </h2>
+
+
+                <p>
+                    Find a carpool and request
+                    a seat to see your rides here.
+                </p>
+
+
+                <button
+                    onclick="window.location.href='dashboard.html'"
+                >
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    Find a Ride
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CANCEL MODAL
+        ================================================= -->
+
+        <div
+            id="cancelModal"
+            class="modal-overlay"
+        >
+
+
+            <div class="cancel-modal">
+
+
+                <button
+                    class="modal-close"
+                    id="modalCloseButton"
+                    type="button"
+                >
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+
+                <div class="modal-icon">
+
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+
+                </div>
+
+
+                <h2>
+                    Cancel Ride?
+                </h2>
+
+
+                <p>
+                    Are you sure you want to cancel
+                    this ride request?
+                </p>
+
+
+                <div class="modal-warning">
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    <span>
+                        This ride will be moved to
+                        your cancelled rides history.
+                    </span>
+
+                </div>
+
+
+                <div class="modal-buttons">
+
+
+                    <button
+                        id="keepRideButton"
+                        class="keep-button"
+                        type="button"
+                    >
+
+                        Keep Ride
+
+                    </button>
+
+
+                    <button
+                        id="confirmCancelButton"
+                        class="confirm-cancel-button"
+                        type="button"
+                    >
+
+                        <i class="fa-solid fa-ban"></i>
+
+                        Yes, Cancel
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+</div>
+
+
+
+<!-- MOBILE OVERLAY -->
+
+<div
+    class="sidebar-overlay"
+    id="sidebarOverlay"
+></div>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="myride.js"></script>
+<script src="theme.js"></script>
+
+
+</body>
+
+</html>

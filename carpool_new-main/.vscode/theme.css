@@ -1,0 +1,1749 @@
+/* =====================================================
+   GLOBAL DARK MODE
+===================================================== */
+
+html.dark-mode,
+html.dark-mode body {
+
+    background: #101512 !important;
+
+    color: #edf5ef !important;
+
+}
+
+
+/* ===============================
+   COMMON BACKGROUNDS
+================================ */
+
+html.dark-mode main,
+html.dark-mode .main-area,
+html.dark-mode .content,
+html.dark-mode .details-container,
+html.dark-mode .main-container {
+
+    background: #101512 !important;
+
+}
+
+
+/* ===============================
+   CARDS
+================================ */
+
+html.dark-mode .card,
+html.dark-mode .settings-card,
+html.dark-mode .ride-card,
+html.dark-mode .driver-card,
+html.dark-mode .route-card,
+html.dark-mode .info-card,
+html.dark-mode .car-card,
+html.dark-mode .rating-card,
+html.dark-mode .reviews-card,
+html.dark-mode .contact-card,
+html.dark-mode .profile-card,
+html.dark-mode .form-card,
+html.dark-mode .post-card,
+html.dark-mode .dashboard-card {
+
+    background: #19201c !important;
+
+    border-color: #303b34 !important;
+
+    color: #edf5ef !important;
+
+}
+
+
+/* ===============================
+   SIDEBAR
+================================ */
+
+html.dark-mode .sidebar {
+
+    background: #171d19 !important;
+
+    border-color: #303b34 !important;
+
+}
+
+
+html.dark-mode .sidebar-item {
+
+    color: #cbd8cf !important;
+
+}
+
+
+html.dark-mode .sidebar-item:hover {
+
+    background: #223028 !important;
+
+    color: #6fd39a !important;
+
+}
+
+
+html.dark-mode .sidebar-item.active {
+
+    background: #193b29 !important;
+
+    color: #6fd39a !important;
+
+}
+
+
+/* ===============================
+   TOPBAR / NAVBAR
+================================ */
+
+html.dark-mode .topbar,
+html.dark-mode .navbar,
+html.dark-mode .details-header {
+
+    background: #171d19 !important;
+
+    border-color: #303b34 !important;
+
+    color: #edf5ef !important;
+
+}
+
+
+/* ===============================
+   TEXT
+================================ */
+
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode strong {
+
+    color: #edf5ef !important;
+
+}
+
+
+html.dark-mode p,
+html.dark-mode span,
+html.dark-mode small,
+html.dark-mode label {
+
+    color: #a7b4ac;
+
+}
+
+
+/* ===============================
+   INPUTS
+================================ */
+
+html.dark-mode input,
+html.dark-mode select,
+html.dark-mode textarea {
+
+    background: #202923 !important;
+
+    color: #edf5ef !important;
+
+    border-color: #3a473f !important;
+
+}
+
+
+html.dark-mode input::placeholder,
+html.dark-mode textarea::placeholder {
+
+    color: #77847c !important;
+
+}
+
+
+html.dark-mode select option {
+
+    background: #202923;
+
+    color: #edf5ef;
+
+}
+
+
+/* ===============================
+   BUTTONS
+================================ */
+
+html.dark-mode .logout-button,
+html.dark-mode .top-logout {
+
+    background: #19201c !important;
+
+    color: #75d69d !important;
+
+    border-color: #405048 !important;
+
+}
+
+
+html.dark-mode .logout-button:hover,
+html.dark-mode .top-logout:hover {
+
+    background: #07883f !important;
+
+    color: white !important;
+
+}
+
+
+/* ===============================
+   SEARCH BOX
+================================ */
+
+html.dark-mode .search-box,
+html.dark-mode .dashboard-search-box {
+
+    background: #19201c !important;
+
+    border-color: #303b34 !important;
+
+}
+
+
+/* ===============================
+   RIDE DETAILS
+================================ */
+
+html.dark-mode .route-row,
+html.dark-mode .info-box,
+html.dark-mode .car-details,
+html.dark-mode .rating-bar {
+
+    background: #202923 !important;
+
+    border-color: #354239 !important;
+
+}
+
+
+/* ===============================
+   EMPTY STATES
+================================ */
+
+html.dark-mode .empty-state,
+html.dark-mode .no-results {
+
+    background: #19201c !important;
+
+    color: #edf5ef !important;
+
+}
+
+
+/* ===============================
+   MODALS
+================================ */
+
+html.dark-mode .modal-overlay {
+
+    background: rgba(0, 0, 0, 0.72) !important;
+
+}
+
+
+html.dark-mode .cancel-modal {
+
+    background: #19201c !important;
+
+    color: #edf5ef !important;
+
+}
+
+
+/* ===============================
+   HERO
+================================ */
+
+html.dark-mode .hero-card {
+
+    background:
+        linear-gradient(
+            120deg,
+            #18221c,
+            #202b24
+        ) !important;
+
+    border-color: #303b34 !important;
+
+}
+
+
+html.dark-mode .hero-gradient {
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(24,34,28,1) 0%,
+            rgba(24,34,28,.95) 30%,
+            rgba(24,34,28,.70) 55%,
+            rgba(24,34,28,.20) 80%,
+            transparent 100%
+        ) !important;
+
+}
+
+
+/* ===============================
+   SAFETY CARD
+================================ */
+
+html.dark-mode .safety-card {
+
+    background: #193b29 !important;
+
+}
+
+
+/* ===============================
+   PROFILE
+================================ */
+
+html.dark-mode .profile-avatar {
+
+    background: #193b29 !important;
+
+    color: #75d69d !important;
+
+}
+
+
+/* ===============================
+   LINKS
+================================ */
+
+html.dark-mode a {
+
+    color: #75d69d;
+
+}
+
+
+/* ===============================
+   TERMS PAGE
+================================ */
+
+html.dark-mode .terms-header {
+
+    background: #171d19 !important;
+
+    border-color: #303b34 !important;
+
+}
+
+
+html.dark-mode .terms-card {
+
+    background: #19201c !important;
+
+    border-color: #303b34 !important;
+
+}
+
+
+html.dark-mode .agreement-box {
+
+    background: #1d3025 !important;
+
+    border-color: #355240 !important;
+
+}
+
+
+html.dark-mode .back-button {
+
+    color: #a7b4ac !important;
+
+}
+
+
+/* ===============================
+   TRANSITION
+================================ */
+
+body,
+.sidebar,
+.topbar,
+.navbar,
+.card,
+.settings-card,
+.ride-card,
+.hero-card,
+.terms-card,
+input,
+select,
+textarea {
+
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        border-color .3s ease;
+
+}
+
+/* =====================================================
+   DASHBOARD - DARK MODE TEXT VISIBILITY
+===================================================== */
+
+/* Hero section stays light because of the image */
+html.dark-mode .hero-content h1,
+html.dark-mode .hero-content p {
+    color: #101610 !important;
+}
+
+html.dark-mode .hero-content h1 span {
+    color: #07883f !important;
+}
+
+
+/* Why Carpool section */
+html.dark-mode .why-section {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+}
+
+html.dark-mode .why-section > h2,
+html.dark-mode .why-section h3 {
+    color: #172018 !important;
+}
+
+html.dark-mode .why-section p {
+    color: #68736b !important;
+}
+
+
+/* White panels */
+html.dark-mode .panel {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+}
+
+html.dark-mode .panel h2,
+html.dark-mode .panel h3,
+html.dark-mode .panel strong {
+    color: #172018 !important;
+}
+
+html.dark-mode .panel p,
+html.dark-mode .panel span {
+    color: #68736b !important;
+}
+
+
+/* Upcoming ride */
+html.dark-mode .upcoming-card {
+    background: #f8fbf8 !important;
+    border-color: #dfe5e0 !important;
+}
+
+html.dark-mode .upcoming-route strong,
+html.dark-mode .upcoming-card strong {
+    color: #172018 !important;
+}
+
+html.dark-mode .upcoming-route span,
+html.dark-mode .upcoming-driver {
+    color: #68736b !important;
+}
+
+html.dark-mode .upcoming-time {
+    background: #ffffff !important;
+}
+
+html.dark-mode .upcoming-time span {
+    color: #68736b !important;
+}
+
+html.dark-mode .upcoming-action {
+    background: #ffffff !important;
+    color: #07883f !important;
+}
+
+
+/* Quick search buttons */
+html.dark-mode .quick-search-grid button {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+    color: #465049 !important;
+}
+
+
+/* Bottom cards */
+html.dark-mode .bottom-card:not(.green) {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+}
+
+html.dark-mode .bottom-card:not(.green) h2 {
+    color: #172018 !important;
+}
+
+html.dark-mode .bottom-card:not(.green) p {
+    color: #68736b !important;
+}
+
+html.dark-mode .bottom-card:not(.green) span {
+    color: #07883f !important;
+}
+
+
+/* =====================================================
+   SETTINGS - DARK MODE TEXT VISIBILITY
+===================================================== */
+
+/* Settings page heading */
+html.dark-mode .settings-heading h1 {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .settings-heading p {
+    color: #a7b4ac !important;
+}
+
+
+/* Settings cards */
+html.dark-mode .settings-card {
+    background: #19201c !important;
+    border-color: #303b34 !important;
+}
+
+html.dark-mode .card-title h2 {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .card-title p {
+    color: #a7b4ac !important;
+}
+
+
+/* Appearance options
+   These stay light, so their text must stay dark */
+html.dark-mode .appearance-option {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+    color: #172018 !important;
+}
+
+html.dark-mode .appearance-option.selected {
+    background: #f7fcf9 !important;
+    border-color: #07883f !important;
+}
+
+html.dark-mode .appearance-info strong {
+    color: #172018 !important;
+}
+
+html.dark-mode .appearance-info span {
+    color: #68736b !important;
+}
+
+
+/* Settings links */
+html.dark-mode .settings-link {
+    color: #edf5ef !important;
+    border-color: #303b34 !important;
+}
+
+html.dark-mode .settings-link strong {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .settings-link small {
+    color: #a7b4ac !important;
+}
+
+html.dark-mode .settings-link:hover strong {
+    color: #75d69d !important;
+}
+
+
+/* Link icons */
+html.dark-mode .link-icon {
+    background: #193b29 !important;
+    color: #75d69d !important;
+}
+
+
+/* Safety card */
+html.dark-mode .safety-card {
+    background: #193b29 !important;
+}
+
+html.dark-mode .safety-card h3 {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .safety-card p {
+    color: #a7b4ac !important;
+}
+
+
+/* Top user information */
+html.dark-mode .top-user strong {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .top-user span {
+    color: #a7b4ac !important;
+}
+
+/* =====================================================
+   SETTINGS FAQ - DARK MODE TEXT VISIBILITY
+===================================================== */
+
+html.dark-mode .faq-box {
+    background: #19201c !important;
+    color: #edf5ef !important;
+}
+
+html.dark-mode .faq-title-area h2 {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .faq-title-area span {
+    color: #75d69d !important;
+}
+
+html.dark-mode .faq-close {
+    color: #a7b4ac !important;
+}
+
+html.dark-mode .faq-close:hover {
+    color: #75d69d !important;
+}
+
+html.dark-mode .faq-item h3 {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .faq-item p {
+    color: #a7b4ac !important;
+}
+
+html.dark-mode .faq-item strong {
+    color: #75d69d !important;
+}
+
+html.dark-mode .faq-footer {
+    background: #193b29 !important;
+}
+
+html.dark-mode .faq-footer span {
+    color: #cbd8cf !important;
+}
+
+html.dark-mode .faq-footer button {
+    color: #ffffff !important;
+}
+
+/* =====================================================
+   RIDE DETAILS - DARK MODE TEXT VISIBILITY
+===================================================== */
+
+/* Driver hero card */
+html.dark-mode .driver-hero {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+}
+
+html.dark-mode .driver-hero h1,
+html.dark-mode .driver-hero h2,
+html.dark-mode .driver-hero h3,
+html.dark-mode .driver-hero strong {
+    color: #172018 !important;
+}
+
+html.dark-mode .driver-hero p,
+html.dark-mode .driver-hero span {
+    color: #68736b !important;
+}
+
+
+/* Driver stats */
+html.dark-mode .driver-stats {
+    color: #172018 !important;
+}
+
+html.dark-mode .driver-stats strong,
+html.dark-mode .stat strong {
+    color: #172018 !important;
+}
+
+html.dark-mode .driver-stats span,
+html.dark-mode .stat span {
+    color: #68736b !important;
+}
+
+
+/* Main content cards */
+html.dark-mode .content-card {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+}
+
+html.dark-mode .content-card h2,
+html.dark-mode .content-card h3,
+html.dark-mode .content-card h4,
+html.dark-mode .content-card strong {
+    color: #172018 !important;
+}
+
+html.dark-mode .content-card p,
+html.dark-mode .content-card span {
+    color: #68736b !important;
+}
+
+
+/* Route information */
+html.dark-mode .route-row {
+    background: #f8fbf8 !important;
+    border-color: #dfe5e0 !important;
+}
+
+html.dark-mode .route-row strong,
+html.dark-mode .route-row h3 {
+    color: #172018 !important;
+}
+
+html.dark-mode .route-row span,
+html.dark-mode .route-row p {
+    color: #68736b !important;
+}
+
+
+/* Car details */
+html.dark-mode .car-details {
+    color: #050705 !important;
+}
+
+html.dark-mode .car-details strong {
+    color: #eff5ef !important;
+}
+
+html.dark-mode .car-details span {
+    color: #68736b !important;
+}
+
+
+/* Request / Reserve card */
+html.dark-mode .request-card {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+}
+
+html.dark-mode .request-card h2,
+html.dark-mode .request-card h3,
+html.dark-mode .request-card strong {
+    color: #172018 !important;
+}
+
+html.dark-mode .request-card p,
+html.dark-mode .request-card span {
+    color: #68736b !important;
+}
+
+
+/* Safety card stays green */
+html.dark-mode .safety-card {
+    background: #193b29 !important;
+    border-color: #355240 !important;
+}
+
+html.dark-mode .safety-card h3,
+html.dark-mode .safety-card strong {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .safety-card p,
+html.dark-mode .safety-card span {
+    color: #cbd8cf !important;
+}
+
+
+/* Call / Chat buttons */
+html.dark-mode .call-button {
+    background: #e7f5eb !important;
+    color: #07883f !important;
+    border-color: #c9e3d0 !important;
+}
+
+html.dark-mode .chat-button {
+    background: #07883f !important;
+    color: #ffffff !important;
+}
+
+
+/* Requested state */
+html.dark-mode .requested-state {
+    background: #edf8f0 !important;
+    color: #07883f !important;
+    border-color: #bcdcc4 !important;
+}
+
+/* =====================================================
+   GLOBAL TOPBAR / HEADER - DARK MODE
+===================================================== */
+
+html.dark-mode .topbar,
+html.dark-mode .navbar,
+html.dark-mode .ride-topbar {
+    background: #171d19 !important;
+    border-bottom-color: #303b34 !important;
+    color: #edf5ef !important;
+}
+
+
+/* Logo / brand */
+html.dark-mode .topbar .brand,
+html.dark-mode .topbar .logo,
+html.dark-mode .topbar .brand-name,
+html.dark-mode .ride-topbar .brand-small {
+    color: #edf5ef !important;
+}
+
+
+/* Page title */
+html.dark-mode .page-title,
+html.dark-mode .topbar-title {
+    color: #75d69d !important;
+}
+
+
+/* Notification icon */
+html.dark-mode .top-notification {
+    color: #edf5ef !important;
+}
+
+
+/* User area */
+html.dark-mode .current-user {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .user-details strong,
+html.dark-mode .current-user strong {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .user-details span,
+html.dark-mode .current-user span {
+    color: #a7b4ac !important;
+}
+
+
+/* Profile avatar */
+html.dark-mode .profile-avatar {
+    background: #193b29 !important;
+    color: #75d69d !important;
+}
+
+
+/* Menu / hamburger button */
+html.dark-mode .menu-button {
+    color: #edf5ef !important;
+}
+
+
+/* Header links/buttons */
+html.dark-mode .topbar a,
+html.dark-mode .navbar a {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .topbar a:hover,
+html.dark-mode .navbar a:hover {
+    color: #75d69d !important;
+}
+
+/* =====================================================
+   MY RIDES - DARK MODE VISIBILITY
+===================================================== */
+
+/* Top header */
+html.dark-mode .top-header {
+    background: #171d19 !important;
+    border-bottom-color: #303b34 !important;
+}
+
+html.dark-mode .header-icon {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .header-user-info strong {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .header-user-info small {
+    color: #a7b4ac !important;
+}
+
+html.dark-mode .user-avatar {
+    background: #193b29 !important;
+    color: #75d69d !important;
+}
+
+
+/* Page heading */
+html.dark-mode .page-heading h1 {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .page-heading p {
+    color: #a7b4ac !important;
+}
+
+
+/* Summary cards stay WHITE */
+html.dark-mode .summary-card {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+}
+
+html.dark-mode .summary-card span {
+    color: #68736b !important;
+}
+
+html.dark-mode .summary-card strong {
+    color: #172018 !important;
+}
+
+
+/* Summary icons */
+html.dark-mode .summary-icon.green {
+    background: #edf8f1 !important;
+    color: #07883f !important;
+}
+
+html.dark-mode .summary-icon.orange {
+    background: #fff5e7 !important;
+    color: #e99a25 !important;
+}
+
+html.dark-mode .summary-icon.blue {
+    background: #edf4ff !important;
+    color: #3478d4 !important;
+}
+
+html.dark-mode .summary-icon.purple {
+    background: #f4effb !important;
+    color: #8a62c9 !important;
+}
+
+
+/* Your Rides main card stays WHITE */
+html.dark-mode .rides-section {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+}
+
+
+/* Your Rides heading */
+html.dark-mode .rides-section-header h2 {
+    color: #172018 !important;
+}
+
+html.dark-mode .rides-section-header p {
+    color: #68736b !important;
+}
+
+
+/* Verified rides badge */
+html.dark-mode .ride-status-info {
+    background: #edf8f1 !important;
+    color: #07883f !important;
+}
+
+
+/* Tabs */
+html.dark-mode .tabs {
+    border-bottom-color: #dfe5e0 !important;
+}
+
+html.dark-mode .tab {
+    color: #68736b !important;
+}
+
+html.dark-mode .tab:hover,
+html.dark-mode .tab.active {
+    color: #07883f !important;
+}
+
+
+/* Ride cards */
+html.dark-mode .my-ride-card {
+    background: #f8fbf8 !important;
+    border-color: #dfe5e0 !important;
+}
+
+html.dark-mode .ride-info h3 {
+    color: #172018 !important;
+}
+
+html.dark-mode .ride-driver {
+    color: #68736b !important;
+}
+
+html.dark-mode .ride-route {
+    color: #3f4a42 !important;
+}
+
+html.dark-mode .ride-details {
+    color: #68736b !important;
+}
+
+html.dark-mode .ride-price {
+    color: #07883f !important;
+}
+
+html.dark-mode .ride-price span {
+    color: #68736b !important;
+}
+
+
+/* Empty state */
+html.dark-mode .empty-state {
+    background: #19201c !important;
+    border-color: #354239 !important;
+}
+
+html.dark-mode .empty-state h2 {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .empty-state p {
+    color: #a7b4ac !important;
+}
+
+html.dark-mode .empty-icon {
+    background: #193b29 !important;
+    color: #75d69d !important;
+}
+
+
+/* Cancel button */
+html.dark-mode .cancel-ride-button {
+    background: #ffffff !important;
+    color: #d84b4b !important;
+    border-color: #f0caca !important;
+}
+
+
+/* View ride button */
+html.dark-mode .view-my-ride {
+    background: #07883f !important;
+    color: #ffffff !important;
+}
+
+/* =====================================================
+   POST A RIDE - RIDE PREVIEW DARK MODE
+===================================================== */
+
+html.dark-mode .preview-card {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+}
+
+
+/* Preview heading */
+html.dark-mode .preview-card .preview-header h2 {
+    color: #172018 !important;
+}
+
+html.dark-mode .preview-card .preview-header > div:first-child span {
+    color: #07883f !important;
+}
+
+
+/* Live badge */
+html.dark-mode .preview-card .live-dot {
+    background: #edf8f1 !important;
+    color: #07883f !important;
+}
+
+
+/* Driver */
+html.dark-mode .preview-card .preview-driver strong {
+    color: #172018 !important;
+}
+
+html.dark-mode .preview-card .preview-driver span {
+    color: #68736b !important;
+}
+
+html.dark-mode .preview-card .verified {
+    color: #07883f !important;
+}
+
+
+/* Route labels */
+html.dark-mode .preview-card .route-point small {
+    color: #7b857d !important;
+}
+
+html.dark-mode .preview-card .route-point strong {
+    color: #172018 !important;
+}
+
+
+/* Route icons */
+html.dark-mode .preview-card .route-icon.pickup {
+    background: #edf8f1 !important;
+    color: #07883f !important;
+}
+
+html.dark-mode .preview-card .route-icon.destination {
+    background: #edf4ff !important;
+    color: #3478d4 !important;
+}
+
+
+/* Connector */
+html.dark-mode .preview-card .route-connector {
+    background: #d8e2db !important;
+}
+
+
+/* Date / time / seats */
+html.dark-mode .preview-card .preview-details {
+    border-color: #e2e9e3 !important;
+}
+
+html.dark-mode .preview-card .preview-details span {
+    color: #5e6961 !important;
+}
+
+html.dark-mode .preview-card .preview-details i {
+    color: #07883f !important;
+}
+
+
+/* Price */
+html.dark-mode .preview-card .preview-bottom small {
+    color: #7b857d !important;
+}
+
+html.dark-mode .preview-card .preview-bottom strong {
+    color: #07883f !important;
+}
+
+
+/* Car */
+html.dark-mode .preview-card .car-mini {
+    color: #59645c !important;
+}
+
+html.dark-mode .preview-card .car-mini i {
+    color: #07883f !important;
+}
+
+/* =====================================================
+   PROFILE PAGE - DARK MODE VISIBILITY
+===================================================== */
+
+/* Top header */
+html.dark-mode .profile-page .topbar,
+html.dark-mode .topbar {
+    background: #171d19 !important;
+    border-bottom-color: #303b34 !important;
+}
+
+html.dark-mode .page-title {
+    color: #75d69d !important;
+}
+
+html.dark-mode .top-user strong {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .top-user span {
+    color: #a7b4ac !important;
+}
+
+html.dark-mode .top-logout {
+    background: #19201c !important;
+    color: #75d69d !important;
+    border-color: #405048 !important;
+}
+
+
+/* Page heading */
+html.dark-mode .page-heading > span {
+    color: #75d69d !important;
+}
+
+html.dark-mode .page-heading h1 {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .page-heading p {
+    color: #a7b4ac !important;
+}
+
+
+/* Profile card */
+html.dark-mode .profile-card {
+    background: #19201c !important;
+    border-color: #303b34 !important;
+}
+
+html.dark-mode .profile-details h2 {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .profile-details p {
+    color: #a7b4ac !important;
+}
+
+html.dark-mode .profile-photo {
+    background: #193b29 !important;
+    border-color: #355240 !important;
+    color: #75d69d !important;
+}
+
+html.dark-mode .student-badge {
+    background: #193b29 !important;
+    color: #75d69d !important;
+}
+
+html.dark-mode .edit-profile-button {
+    background: #ffffff !important;
+    color: #07883f !important;
+    border-color: #07883f !important;
+}
+
+
+/* Personal Information card
+   This card remains WHITE */
+html.dark-mode .information-card {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+}
+
+html.dark-mode .information-card .section-heading h2 {
+    color: #172018 !important;
+}
+
+html.dark-mode .information-card .section-heading p {
+    color: #68736b !important;
+}
+
+html.dark-mode .information-item {
+    border-color: #dfe5e0 !important;
+}
+
+html.dark-mode .information-item span {
+    color: #7b857e !important;
+}
+
+html.dark-mode .information-item strong {
+    color: #172018 !important;
+}
+
+
+/* Account card
+   This card remains WHITE */
+html.dark-mode .options-card {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+}
+
+html.dark-mode .options-card .section-heading h2 {
+    color: #172018 !important;
+}
+
+html.dark-mode .options-card .section-heading p {
+    color: #68736b !important;
+}
+
+html.dark-mode .profile-option {
+    color: #172018 !important;
+    border-color: #dfe5e0 !important;
+}
+
+html.dark-mode .profile-option strong {
+    color: #172018 !important;
+}
+
+html.dark-mode .profile-option small {
+    color: #68736b !important;
+}
+
+html.dark-mode .profile-option > span {
+    background: #edf8f1 !important;
+    color: #07883f !important;
+}
+
+html.dark-mode .profile-option > b {
+    color: #8a948d !important;
+}
+
+html.dark-mode .profile-option:hover {
+    background: #f5faf7 !important;
+}
+
+
+/* Safety card */
+html.dark-mode .safety-card {
+    background: #193b29 !important;
+}
+
+html.dark-mode .safety-card h3 {
+    color: #edf5ef !important;
+}
+
+html.dark-mode .safety-card p {
+    color: #cbd8cf !important;
+}
+
+html.dark-mode .safety-card a {
+    color: #75d69d !important;
+}
+
+/* =====================================================
+   PROFILE - EDIT PROFILE MODAL DARK MODE
+===================================================== */
+
+/* Dark overlay behind modal */
+html.dark-mode .modal-overlay {
+    background: rgba(0, 0, 0, 0.78) !important;
+}
+
+
+/* Modal stays WHITE */
+html.dark-mode .edit-profile-modal {
+    background: #ffffff !important;
+    color: #172018 !important;
+    border-color: #dfe5e0 !important;
+}
+
+
+/* Modal heading */
+html.dark-mode .modal-heading h2 {
+    color: #172018 !important;
+}
+
+html.dark-mode .modal-heading p {
+    color: #68736b !important;
+}
+
+
+/* Close button */
+html.dark-mode .close-modal {
+    background: #edf8f1 !important;
+    color: #07883f !important;
+}
+
+html.dark-mode .close-modal:hover {
+    background: #07883f !important;
+    color: #ffffff !important;
+}
+
+
+/* Edit photo section */
+html.dark-mode .edit-photo-section {
+    background: #f7faf8 !important;
+    border-color: #dfe5e0 !important;
+}
+
+html.dark-mode .edit-photo-preview {
+    background: #edf8f1 !important;
+    border-color: #cfe6d6 !important;
+    color: #07883f !important;
+}
+
+
+/* Photo buttons */
+html.dark-mode .change-photo-button {
+    background: #07883f !important;
+    color: #ffffff !important;
+}
+
+html.dark-mode .delete-photo-button {
+    background: #ffffff !important;
+    border-color: #ead4d4 !important;
+    color: #c94444 !important;
+}
+
+html.dark-mode .photo-actions small {
+    color: #68736b !important;
+}
+
+
+/* Form labels */
+html.dark-mode .form-group label {
+    color: #172018 !important;
+}
+
+
+/* Inputs */
+html.dark-mode .form-group input,
+html.dark-mode .form-group select,
+html.dark-mode .form-group textarea {
+    background: #202923 !important;
+    border-color: #3a473f !important;
+    color: #edf5ef !important;
+}
+
+
+/* Disabled email field */
+html.dark-mode .form-group input:disabled {
+    background: #202923 !important;
+    color: #a7b4ac !important;
+}
+
+
+/* Helper text below email etc. */
+html.dark-mode .form-group > small {
+    color: #68736b !important;
+}
+
+
+/* Select dropdown */
+html.dark-mode .form-group select option {
+    background: #202923 !important;
+    color: #edf5ef !important;
+}
+
+
+/* Error message */
+html.dark-mode .form-error {
+    color: #d84b4b !important;
+}
+
+
+/* Bottom divider */
+html.dark-mode .modal-buttons {
+    border-top-color: #dfe5e0 !important;
+}
+
+
+/* Cancel */
+html.dark-mode .cancel-button {
+    background: #ffffff !important;
+    border-color: #cfd8d2 !important;
+    color: #4f5b53 !important;
+}
+
+html.dark-mode .cancel-button:hover {
+    background: #f5f7f6 !important;
+}
+
+
+/* Save */
+html.dark-mode .save-profile-button {
+    background: #07883f !important;
+    color: #ffffff !important;
+}
+
+/* =====================================================
+   PROFILE POPUPS - DARK MODE
+   Help & Support
+   Trusted Contacts
+   Payment Methods
+===================================================== */
+
+/* Popup background */
+html.dark-mode .popup-overlay {
+    background: rgba(0, 0, 0, 0.78) !important;
+}
+
+
+/* Popup itself stays WHITE */
+html.dark-mode .contact-popup {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+    color: #172018 !important;
+}
+
+
+/* Popup heading */
+html.dark-mode .contact-popup h2 {
+    color: #172018 !important;
+}
+
+html.dark-mode .contact-popup > p {
+    color: #68736b !important;
+}
+
+
+/* Popup close button */
+html.dark-mode .popup-close {
+    background: #edf8f1 !important;
+    color: #07883f !important;
+}
+
+html.dark-mode .popup-close:hover {
+    background: #07883f !important;
+    color: #ffffff !important;
+}
+
+
+/* Popup icon */
+html.dark-mode .popup-icon {
+    background: #edf8f1 !important;
+    color: #07883f !important;
+}
+
+
+/* =====================================================
+   HELP & SUPPORT
+===================================================== */
+
+html.dark-mode .support-options {
+    border-color: #dfe5e0 !important;
+}
+
+html.dark-mode .support-option {
+    color: #172018 !important;
+    border-top-color: #dfe5e0 !important;
+    background: transparent !important;
+}
+
+html.dark-mode .support-option:hover {
+    color: #07883f !important;
+    background: #f5faf7 !important;
+}
+
+html.dark-mode .support-option > span {
+    background: #edf8f1 !important;
+    color: #07883f !important;
+}
+
+html.dark-mode .support-option strong {
+    color: #172018 !important;
+}
+
+html.dark-mode .support-option small {
+    color: #68736b !important;
+}
+
+html.dark-mode .support-option b {
+    color: #7b857e !important;
+}
+
+
+/* =====================================================
+   TRUSTED CONTACTS
+===================================================== */
+
+html.dark-mode .helpline-list {
+    color: #172018 !important;
+}
+
+html.dark-mode .helpline {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+    color: #172018 !important;
+}
+
+html.dark-mode .helpline:hover {
+    background: #f5faf7 !important;
+    border-color: #07883f !important;
+}
+
+html.dark-mode .helpline strong {
+    color: #172018 !important;
+}
+
+html.dark-mode .helpline span {
+    color: #07883f !important;
+}
+
+html.dark-mode .helpline b {
+    background: #07883f !important;
+    color: #ffffff !important;
+}
+
+
+/* =====================================================
+   POPUP BUTTON
+===================================================== */
+
+html.dark-mode .popup-done {
+    background: #07883f !important;
+    color: #ffffff !important;
+}
+
+html.dark-mode .popup-done:hover {
+    background: #067536 !important;
+}
+
+/* =====================================================
+   PAYMENT METHODS - DARK MODE
+===================================================== */
+
+/* ===============================
+   MAIN PAYMENT CARD
+================================ */
+
+html.dark-mode .payment-card,
+html.dark-mode .payment-methods-card,
+html.dark-mode .payment-container {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+    color: #172018 !important;
+}
+
+/* Main heading */
+html.dark-mode .payment-card h2,
+html.dark-mode .payment-methods-card h2,
+html.dark-mode .payment-container h2 {
+    color: #172018 !important;
+}
+
+/* Main description */
+html.dark-mode .payment-card p,
+html.dark-mode .payment-methods-card p,
+html.dark-mode .payment-container p {
+    color: #68736b !important;
+}
+
+/* Empty payment area */
+html.dark-mode .payment-empty,
+html.dark-mode .empty-payment,
+html.dark-mode .no-payment-methods {
+    background: #ffffff !important;
+    border-color: #d5e1d9 !important;
+    color: #172018 !important;
+}
+
+/* Empty state text */
+html.dark-mode .payment-empty h3,
+html.dark-mode .empty-payment h3,
+html.dark-mode .no-payment-methods h3 {
+    color: #172018 !important;
+}
+
+html.dark-mode .payment-empty p,
+html.dark-mode .empty-payment p,
+html.dark-mode .no-payment-methods p {
+    color: #68736b !important;
+}
+
+
+/* ===============================
+   ADD PAYMENT MODAL
+================================ */
+
+html.dark-mode .payment-modal,
+html.dark-mode .add-payment-modal,
+html.dark-mode .payment-popup {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+    color: #172018 !important;
+}
+
+
+/* Modal title */
+html.dark-mode .payment-modal h2,
+html.dark-mode .add-payment-modal h2,
+html.dark-mode .payment-popup h2 {
+    color: #172018 !important;
+}
+
+/* Modal subtitle */
+html.dark-mode .payment-modal p,
+html.dark-mode .add-payment-modal p,
+html.dark-mode .payment-popup p {
+    color: #68736b !important;
+}
+
+
+/* Close button */
+html.dark-mode .payment-modal .close-modal,
+html.dark-mode .add-payment-modal .close-modal,
+html.dark-mode .payment-popup .close-modal {
+    background: #edf8f1 !important;
+    color: #07883f !important;
+}
+
+html.dark-mode .payment-modal .close-modal:hover,
+html.dark-mode .add-payment-modal .close-modal:hover,
+html.dark-mode .payment-popup .close-modal:hover {
+    background: #07883f !important;
+    color: #ffffff !important;
+}
+
+
+/* ===============================
+   UPI / CARD OPTIONS
+================================ */
+
+html.dark-mode .payment-option,
+html.dark-mode .payment-method-option,
+html.dark-mode .method-option {
+    background: #ffffff !important;
+    border-color: #dfe5e0 !important;
+    color: #172018 !important;
+}
+
+html.dark-mode .payment-option strong,
+html.dark-mode .payment-method-option strong,
+html.dark-mode .method-option strong {
+    color: #172018 !important;
+}
+
+html.dark-mode .payment-option span,
+html.dark-mode .payment-method-option span,
+html.dark-mode .method-option span {
+    color: #68736b !important;
+}
+
+
+/* Selected UPI */
+html.dark-mode .payment-option.active,
+html.dark-mode .payment-method-option.active,
+html.dark-mode .method-option.active {
+    background: #f1faf4 !important;
+    border-color: #07883f !important;
+}
+
+
+/* ===============================
+   PAYMENT FORM
+================================ */
+
+html.dark-mode .payment-modal label,
+html.dark-mode .add-payment-modal label,
+html.dark-mode .payment-popup label {
+    color: #172018 !important;
+}
+
+html.dark-mode .payment-modal input,
+html.dark-mode .add-payment-modal input,
+html.dark-mode .payment-popup input {
+    background: #202923 !important;
+    border-color: #3a473f !important;
+    color: #edf5ef !important;
+}
+
+html.dark-mode .payment-modal input::placeholder,
+html.dark-mode .add-payment-modal input::placeholder,
+html.dark-mode .payment-popup input::placeholder {
+    color: #77847c !important;
+}
+
+
+/* Save button */
+html.dark-mode .payment-modal button[type="submit"],
+html.dark-mode .add-payment-modal button[type="submit"],
+html.dark-mode .payment-popup button[type="submit"],
+html.dark-mode .save-payment-button {
+    background: #07883f !important;
+    color: #ffffff !important;
+}
+
+
+/* Add Payment Method button */
+html.dark-mode .add-payment-button {
+    background: #07883f !important;
+    color: #ffffff !important;
+}

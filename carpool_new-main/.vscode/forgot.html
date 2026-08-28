@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Chitkara Carpool - Reset Password</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="forgot.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="recovery-page">
+
+
+    <!-- =================================================
+         TOP BAR
+    ================================================== -->
+
+    <header class="topbar">
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <div class="brand-logo">
+                C
+            </div>
+
+            <div>
+
+                <strong>
+                    Chitkara
+                </strong>
+
+                <span>
+                    Carpool
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <a
+            href="index.html"
+            class="back-login"
+        >
+
+            ← Back to Login
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =================================================
+         MAIN FORM
+    ================================================== -->
+
+    <main class="recovery-main">
+
+
+        <div class="recovery-card">
+
+
+            <!-- ICON -->
+
+            <div class="recovery-icon">
+
+                <div class="lock-icon">
+                    ✓
+                </div>
+
+            </div>
+
+
+
+            <!-- HEADING -->
+
+            <div class="recovery-heading">
+
+                <span class="eyebrow">
+                    ACCOUNT RECOVERY
+                </span>
+
+
+                <h1>
+                    Reset your password
+                </h1>
+
+
+                <p>
+                    Enter your registered Chitkara email
+                    and create a new password.
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 STEPS
+            ================================================== -->
+
+            <div class="steps">
+
+
+                <div class="step active">
+
+                    <div class="step-number">
+                        1
+                    </div>
+
+                    <span>
+                        Verify
+                    </span>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        2
+                    </div>
+
+                    <span>
+                        Reset
+                    </span>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        3
+                    </div>
+
+                    <span>
+                        Done
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FORM
+            ================================================== -->
+
+            <form id="forgotForm">
+
+
+                <!-- EMAIL -->
+
+                <div class="input-group">
+
+                    <label for="email">
+                        Chitkara Email
+                    </label>
+
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">
+                            @
+                        </span>
+
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="yourname@chitkara.edu.in"
+                            autocomplete="email"
+                        >
+
+                    </div>
+
+
+                    <small>
+                        Use the email registered with your account.
+                    </small>
+
+                </div>
+
+
+
+                <!-- NEW PASSWORD -->
+
+                <div class="input-group">
+
+                    <label for="newPassword">
+                        New Password
+                    </label>
+
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">
+                            •
+                        </span>
+
+
+                        <input
+                            type="password"
+                            id="newPassword"
+                            placeholder="Enter new password"
+                            autocomplete="new-password"
+                        >
+
+
+                        <button
+                            type="button"
+                            id="toggleNewPassword"
+                            class="password-toggle"
+                        >
+                            ◉
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CONFIRM PASSWORD -->
+
+                <div class="input-group">
+
+                    <label for="confirmPassword">
+                        Confirm New Password
+                    </label>
+
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">
+                            •
+                        </span>
+
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm new password"
+                            autocomplete="new-password"
+                        >
+
+
+                        <button
+                            type="button"
+                            id="toggleConfirmPassword"
+                            class="password-toggle"
+                        >
+                            ◉
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ERROR -->
+
+                <p
+                    id="errorMessage"
+                    class="error-message"
+                ></p>
+
+
+
+                <!-- SUCCESS -->
+
+                <p
+                    id="successMessage"
+                    class="success-message"
+                ></p>
+
+
+
+                <!-- RESET -->
+
+                <button
+                    type="submit"
+                    class="reset-button"
+                >
+
+                    <span>
+                        Reset Password
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+
+                </button>
+
+
+            </form>
+
+
+
+            <!-- LOGIN -->
+
+            <p class="login-text">
+
+                Remember your password?
+
+                <a href="index.html">
+                    Login instead
+                </a>
+
+            </p>
+
+
+
+            <!-- SECURITY -->
+
+            <div class="security-box">
+
+                <div class="security-icon">
+                    ✓
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Secure Account Recovery
+                    </strong>
+
+                    <p>
+                        Your password can only be changed
+                        using your registered Chitkara ID.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
+</div>
+
+
+
+<script src="forgot.js"></script>
+
+</body>
+
+</html>

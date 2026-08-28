@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Ride Details - Chitkara Carpool</title>
+
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Ride CSS -->
+    <link rel="stylesheet" href="ride.css">
+
+    <link rel="stylesheet" href="theme.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     PAGE
+===================================================== -->
+
+<div class="ride-page">
+
+
+    <!-- =================================================
+         TOPBAR
+    ================================================== -->
+
+    <header class="ride-topbar">
+
+
+        <div class="topbar-left">
+
+            <button
+                class="back-button"
+                onclick="goBack()"
+                aria-label="Go back"
+            >
+                ←
+            </button>
+
+
+            <div class="brand-small">
+
+                <div class="brand-logo">
+                    C
+                </div>
+
+                <div>
+                    <strong>
+                        Chitkara
+                    </strong>
+
+                    <span>
+                        Carpool
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="topbar-title">
+
+            <span>
+                RIDE DETAILS
+            </span>
+
+            <h2>
+                Carpool Details
+            </h2>
+
+        </div>
+
+
+        <div class="topbar-user">
+
+            <div class="mini-avatar">
+                J
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         MAIN CONTENT
+    ================================================== -->
+
+    <main class="ride-container">
+
+
+        <!-- =================================================
+             BREADCRUMB
+        ================================================== -->
+
+        <div class="breadcrumb">
+
+            <a href="dashboard.html">
+                Home
+            </a>
+
+            <span>→</span>
+
+            <span>
+                Find a Ride
+            </span>
+
+            <span>→</span>
+
+            <strong>
+                Ride Details
+            </strong>
+
+        </div>
+
+
+
+        <!-- =================================================
+             MAIN GRID
+        ================================================== -->
+
+        <div class="ride-layout">
+
+
+            <!-- =============================================
+                 LEFT COLUMN
+            ============================================== -->
+
+            <div class="ride-main">
+
+
+                <!-- =========================================
+                     DRIVER HERO
+                ========================================== -->
+
+                <section class="driver-hero">
+
+
+                    <div class="driver-info">
+
+
+                        <div class="driver-photo-wrapper">
+
+                            <img
+                                id="driverPhoto"
+                                src=""
+                                alt="Driver"
+                                class="driver-photo"
+                            >
+
+                            <span class="verified-badge">
+                                ✓
+                            </span>
+
+                        </div>
+
+
+                        <div class="driver-text">
+
+                            <div class="student-label">
+                                CHITKARA UNIVERSITY STUDENT
+                            </div>
+
+
+                            <h1 id="driverName">
+                                Driver Name
+                            </h1>
+
+
+                            <div class="rating-line">
+
+                                <span
+                                    id="driverRating"
+                                    class="rating"
+                                >
+                                    ★ 4.8
+                                </span>
+
+
+                                <span
+                                    id="reviewCount"
+                                    class="reviews"
+                                >
+                                    (24 reviews)
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                Verified student driver
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- DRIVER STATS -->
+
+                    <div class="driver-stats">
+
+
+                        <div class="stat">
+
+                            <strong id="rideCount">
+                                24
+                            </strong>
+
+                            <span>
+                                Rides
+                            </span>
+
+                        </div>
+
+
+                        <div class="stat">
+
+                            <strong>
+                                ✓
+                            </strong>
+
+                            <span>
+                                Verified
+                            </span>
+
+                        </div>
+
+
+                        <div class="stat">
+
+                            <strong>
+                                4.8
+                            </strong>
+
+                            <span>
+                                Rating
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================================
+                     ROUTE
+                ========================================== -->
+
+                <section class="content-card route-card">
+
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <span class="section-label">
+                                YOUR JOURNEY
+                            </span>
+
+                            <h2>
+                                Route Information
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="route-container">
+
+
+                        <!-- PICKUP -->
+
+                        <div class="route-item">
+
+
+                            <div class="route-marker pickup-marker">
+                                <span></span>
+                            </div>
+
+
+                            <div class="route-content">
+
+                                <span>
+                                    PICKUP
+                                </span>
+
+                                <strong
+                                    id="pickupLocation"
+                                >
+                                    Zirakpur Bus Stand
+                                </strong>
+
+                                <p
+                                    id="pickupDetail"
+                                >
+                                    Near Domino's, Chandigarh Road
+                                </p>
+
+                            </div>
+
+
+                            <div class="route-time">
+
+                                <span>
+                                    DEPARTURE
+                                </span>
+
+                                <strong id="rideTime">
+                                    08:00 AM
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- CONNECTING LINE -->
+
+                        <div class="route-connector">
+
+                            <div></div>
+
+                        </div>
+
+
+
+                        <!-- DESTINATION -->
+
+                        <div class="route-item">
+
+
+                            <div class="route-marker destination-marker">
+                                <span></span>
+                            </div>
+
+
+                            <div class="route-content">
+
+                                <span>
+                                    DESTINATION
+                                </span>
+
+                                <strong
+                                    id="destinationLocation"
+                                >
+                                    Chitkara University
+                                </strong>
+
+                                <p
+                                    id="destinationDetail"
+                                >
+                                    Rajpura, Punjab
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================================
+                     RIDE INFORMATION
+                ========================================== -->
+
+                <section class="content-card">
+
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <span class="section-label">
+                                RIDE INFORMATION
+                            </span>
+
+                            <h2>
+                                Trip Details
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="trip-grid">
+
+
+                        <div class="trip-item">
+
+                            <div class="trip-icon">
+                                ◷
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    DATE
+                                </span>
+
+                                <strong id="rideDate">
+                                    18 August 2026
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="trip-item">
+
+                            <div class="trip-icon">
+                                ♙
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    SEATS AVAILABLE
+                                </span>
+
+                                <strong id="rideSeats">
+                                    4 Seats
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="trip-item">
+
+                            <div class="trip-icon">
+                                ₹
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    PRICE / SEAT
+                                </span>
+
+                                <strong id="ridePrice">
+                                    ₹40
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================================
+                     CAR DETAILS
+                ========================================== -->
+
+                <section class="content-card">
+
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <span class="section-label">
+                                VEHICLE
+                            </span>
+
+                            <h2>
+                                Car Details
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="car-details">
+
+
+                        <div class="car-image">
+                            🚗
+                        </div>
+
+
+                        <div class="car-information">
+
+                            <strong id="carName">
+                                Swift Dzire
+                            </strong>
+
+
+                            <p>
+
+                                <span id="carColor">
+                                    White
+                                </span>
+
+                                <span class="dot">
+                                    •
+                                </span>
+
+                                <span id="carNumber">
+                                    PB65XX1234
+                                </span>
+
+                            </p>
+
+                        </div>
+
+
+                        <div class="vehicle-status">
+
+                            <span>
+                                ✓
+                            </span>
+
+                            Verified Vehicle
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================================
+                     REVIEWS
+                ========================================== -->
+
+                <section class="content-card reviews-section">
+
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <span class="section-label">
+                                DRIVER REVIEWS
+                            </span>
+
+                            <h2>
+                                What passengers say
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="rating-summary">
+
+
+                        <div class="big-rating">
+
+                            <strong id="bigRating">
+                                4.8
+                            </strong>
+
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+
+                            <span>
+                                Based on
+                                <b id="ratingTotal">24</b>
+                                reviews
+                            </span>
+
+                        </div>
+
+
+
+                        <div class="rating-bars">
+
+
+                            <div class="rating-bar">
+
+                                <span>
+                                    5 ★
+                                </span>
+
+                                <div>
+                                    <i style="width:85%;"></i>
+                                </div>
+
+                                <span>
+                                    18
+                                </span>
+
+                            </div>
+
+
+                            <div class="rating-bar">
+
+                                <span>
+                                    4 ★
+                                </span>
+
+                                <div>
+                                    <i style="width:35%;"></i>
+                                </div>
+
+                                <span>
+                                    5
+                                </span>
+
+                            </div>
+
+
+                            <div class="rating-bar">
+
+                                <span>
+                                    3 ★
+                                </span>
+
+                                <div>
+                                    <i style="width:10%;"></i>
+                                </div>
+
+                                <span>
+                                    1
+                                </span>
+
+                            </div>
+
+
+                            <div class="rating-bar">
+
+                                <span>
+                                    2 ★
+                                </span>
+
+                                <div>
+                                    <i style="width:0%;"></i>
+                                </div>
+
+                                <span>
+                                    0
+                                </span>
+
+                            </div>
+
+
+                            <div class="rating-bar">
+
+                                <span>
+                                    1 ★
+                                </span>
+
+                                <div>
+                                    <i style="width:0%;"></i>
+                                </div>
+
+                                <span>
+                                    0
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- REVIEWS WILL BE INSERTED BY JS -->
+
+                    <div
+                        id="reviewsContainer"
+                        class="reviews-container"
+                    ></div>
+
+
+                </section>
+
+
+            </div>
+
+
+
+            <!-- =============================================
+                 RIGHT SIDEBAR
+            ============================================== -->
+
+            <aside class="ride-sidebar">
+
+
+                <!-- =========================================
+                     REQUEST CARD
+                ========================================== -->
+
+                <div class="request-card">
+
+
+                    <div class="request-top">
+
+                        <span class="section-label">
+                            READY TO GO?
+                        </span>
+
+                        <h2>
+                            Reserve your seat
+                        </h2>
+
+                        <p>
+                            Join this ride and travel
+                            comfortably with a fellow
+                            Chitkara student.
+                        </p>
+
+                    </div>
+
+
+                    <div class="price-box">
+
+                        <span>
+                            PRICE PER SEAT
+                        </span>
+
+                        <strong id="sidebarPrice">
+                            ₹40
+                        </strong>
+
+                    </div>
+
+
+                    <div class="seat-info">
+
+                        <span>
+                            Available seats
+                        </span>
+
+                        <strong id="sidebarSeats">
+                            4
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        class="request-button"
+                        onclick="requestSeat()"
+                    >
+                        Request Seat
+                        <span>
+                            →
+                        </span>
+                    </button>
+
+
+                    <p class="payment-note">
+                        Payment will be collected
+                        directly by the driver.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     CONTACT CARD
+                ========================================== -->
+
+                <div class="sidebar-card">
+
+
+                    <div class="sidebar-card-heading">
+
+                        <div class="contact-avatar">
+                            <span>
+                                ☎
+                            </span>
+                        </div>
+
+                        <div>
+
+                            <span>
+                                CONTACT DRIVER
+                            </span>
+
+                            <strong id="contactDriverName">
+                                Driver
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-actions">
+
+
+                        <a
+                            id="callButton"
+                            href="#"
+                            class="call-button"
+                        >
+                            <span>☎</span>
+                            Call
+                        </a>
+
+
+                        <button
+                            class="chat-button"
+                            onclick="startChat()"
+                        >
+                            <span>💬</span>
+                            Chat
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     SAFETY CARD
+                ========================================== -->
+
+                <div class="safety-card">
+
+
+                    <div class="safety-icon">
+                        ✓
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Travel Safe
+                        </h3>
+
+                        <p>
+                            Verify the driver and vehicle
+                            before starting your journey.
+                        </p>
+
+                    </div>
+
+
+                    <div class="safety-points">
+
+                        <span>
+                            ✓ Verified Chitkara student
+                        </span>
+
+                        <span>
+                            ✓ Share your ride details
+                        </span>
+
+                        <span>
+                            ✓ Meet at the pickup point
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </aside>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="ride.js"></script>
+<script src="theme.js"></script>
+
+
+
+
+</body>
+
+</html>
